@@ -40,4 +40,4 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           name: 'github-pages-build'
-          path: "_site/"
+          path: "src/_site/"
