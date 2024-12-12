@@ -15,4 +15,3 @@ This repository contains the source of a proposal for an alternative newshub for
 
 - `main`: The default branch.
 - `deploy/gh-pages`: The source code that is to be deployed to GitHub Pages.
-- `live/gh-pages`: The compiled source code of `deploy/gh-pages` that is live on GitHub Pages.
