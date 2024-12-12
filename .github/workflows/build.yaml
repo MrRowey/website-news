@@ -11,9 +11,20 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu-20.04
+    defaults:
+      run:
+        working-directory: src
     steps:
       - name: Clone Repository
         uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+          cache-version: 0
+          working-directory: "${{ github.workspace }}/src"
 
       - name: Setup Pages
         id: pages
