@@ -291,10 +291,21 @@
 
 .post-regular-image-container {
   position: relative;
+
+  overflow: hidden; /* Ensures excess image content is clipped */
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  
+  aspect-ratio: 16 / 9;
+  width: 100%;
 }
 
 .post-regular-image {
   border-radius: 5px;
+
+  height: 100%;
+  width: auto;
 }
 
 .post-regular-meta {

@@ -17,7 +17,7 @@
     {% assign featuredLivePosts = livePosts | where: "type", 'featured' %} 
     {% assign regularLivePosts = livePosts | where: "type", 'regular' %} 
 
-    <section class="post-container">
+    <section class="wrapper">
         <div class="featured-container">
         {%- if featuredLivePosts.size > 0 -%} {% assign featuredLivePost = featuredLivePosts | first %}
 
