@@ -4,8 +4,8 @@ title: What idea is that!
 date: 2024-11-30 12:32:04 +0100
 thumbnail: what-idea-is-that.png
 categories: community
-archived: false
-published: true
+type: regular
+status: live
 priority: 500
 ---
 
