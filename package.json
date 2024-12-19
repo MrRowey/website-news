@@ -8,7 +8,7 @@
     "serve": "cd src && bundle exec jekyll serve --config=_config.dev.yml",
     "workbox-wizard": "workbox wizard",
     "workbox-generate": "workbox generateSW src/workbox-config.js",
-    "lighthouse": "lhci collect --config .github/workflows/config/lighthouserc.json"
+    "lighthouse": "lhci collect --config config/lighthouserc.json"
   },
   "author": "",
   "license": "ISC",
