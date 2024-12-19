@@ -40,9 +40,14 @@ jobs:
           npm install --clean
           npm run workbox-generate
 
-      - name: Upload artifact
-        # Automatically uploads an artifact from the './_site' directory by default
+      - name: Upload artifact for GitHub pages
         uses: actions/upload-pages-artifact@v3
         with:
-          name: 'github-pages-build'
+          name: 'github-pages'
+          path: "src/_site/"
+
+      - name: Upload artifact for CI
+        uses: actions/upload-artifact@v4
+        with:
+          name: 'build'
           path: "src/_site/"

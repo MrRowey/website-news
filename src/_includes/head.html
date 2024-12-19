@@ -1,4 +1,11 @@
 <head>
+
+    <link rel="icon" type="image/png" href="{{ "/assets/favicons/favicon-96x96.png" | relative_url }}" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="{{ "/assets/favicons/favicon.svg" | relative_url }}" />
+    <link rel="shortcut icon" href="{{ "/assets/favicons/favicon.ico" | relative_url }}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ "/assets/favicons/apple-touch-icon.png" | relative_url }}" />
+    <meta name="apple-mobile-web-app-title" content="Newshub for FAForever" />
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,8 +16,8 @@
       {%- include google-analytics.html -%}
     {%- endif -%}
   
-    <link rel="manifest" href="{{ "/manifest.json" | prepend: site.baseurl | prepend: site.url }}" />
-    <script type="text/javascript" src="{{ "/scripts/main.js" | prepend: site.baseurl | prepend: site.url }}"></script>
+    <link rel="manifest" href="{{ "/manifest.json" | relative_url }}" />
+    <script defer type="text/javascript" src="{{ "/scripts/main.js" | relative_url }}"></script>
     
   </head>
   
