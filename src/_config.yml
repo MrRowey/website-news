@@ -28,6 +28,8 @@ baseurl: "/Newshub" # the subpath of your site, e.g. /blog
 url: "https://garanas.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  Garanas
 
+permalink: /:year/:month/:day/:title:output_ext
+
 # Build settings
 theme: minima
 plugins:
@@ -35,6 +37,12 @@ plugins:
   - jekyll-seo-tag
   - jekyll-redirect-from
   - jekyll-github-metadata
+  - jekyll-category-pages
+
+# Settings for jekyll-category-pages
+# See also: https://github.com/field-theory/jekyll-category-pages
+category_layout: category_index.html
+category_path: category
 
 # If you want to link only specific pages in your header, use this and add the path to the pages
 # in order as they should show up.

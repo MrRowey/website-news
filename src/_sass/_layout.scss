@@ -296,7 +296,7 @@
   display: flex;
   justify-content: center; /* Center the image horizontally */
   align-items: center; /* Center the image vertically */
-  
+
   aspect-ratio: 16 / 9;
   width: 100%;
 }
@@ -317,6 +317,13 @@
   padding: 5px;
   background-color: $background-color;
   border-radius: 5px;
+}
+
+.footer-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
 }
 
 /**
