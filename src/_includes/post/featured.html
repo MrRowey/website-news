@@ -1,20 +1,18 @@
-{% comment %} 
-
-    Input parameters:
-    - post: an instance of a post
-
+{% comment %}
+  Input parameters:
+  - post: an instance of a post
 {% endcomment %}
 
-{% assign path = "assets/thumbnails-wide/" %}
-{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+{% assign path = 'assets/thumbnails-wide/' %}
+{% assign date_format = site.minima.date_format | default: '%b %-d, %Y' %}
 
 <a class="post-featured-item-container" href="{{ featuredLivePost.url | relative_url }}">
-    <div class="post-featured-image-container">
-        <img class="post-featured-image" src="{{ path | append: featuredLivePost.thumbnail | relative_url }}" />
-        <span class="post-featured-meta">{{ featuredLivePost.date | date: date_format }}</span>
-    </div>
-    <div class="post-featured-text-container">
-        <h3 class="post-featured-header">{{ featuredLivePost.title | escape }}</h3>
-        <span class="post-featured-excerpt"> {{ featuredLivePost.content }} </span>
-    </div>
+  <div class="post-featured-image-container">
+    <img class="post-featured-image" src="{{ path | append: featuredLivePost.thumbnail | relative_url }}">
+    <span class="post-featured-meta">{{ featuredLivePost.date | date: date_format }}</span>
+  </div>
+  <div class="post-featured-text-container">
+    <h3 class="post-featured-header">{{ featuredLivePost.title | escape }}</h3>
+    <span class="post-featured-excerpt"> {{ featuredLivePost.content }} </span>
+  </div>
 </a>

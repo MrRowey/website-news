@@ -1,18 +1,15 @@
 ---
 layout: base
 ---
-
-{% comment %} 
-
-The scope of this layout is influenced by this plugin:
- - https://github.com/field-theory/jekyll-category-pages#template-for-category-pages
-
+{% comment %}
+  The scope of this layout is influenced by this plugin:
+   - https://github.com/field-theory/jekyll-category-pages#template-for-category-pages
 {% endcomment %}
 
 <ul class="post-small-container">
-{% for post in page.posts %}
-  <li>
-    {% include post/small.html post=post  %}
-  </li>
-{% endfor %}
+  {% for post in page.posts %}
+    <li>
+      {% include post/small.html post=post %}
+    </li>
+  {% endfor %}
 </ul>

@@ -1,20 +1,15 @@
 {
-  "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[shellscript]": {
-    "editor.defaultFormatter": "foxundermoon.shell-format"
-  },
-  "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "files.associations": {
     "*.html": "liquid",
+    "*.scss": "liquid-css",
+    "*.css": "liquid-scss",
+    "*.js": "liquid-javascript"
   },
   "[liquid]": {
-    "editor.defaultFormatter": "sissel.shopify-liquid"
+    "editor.defaultFormatter": "Shopify.theme-check-vscode",
+    "editor.formatOnSave": true
   }
 }
