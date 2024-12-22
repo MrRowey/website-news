@@ -1,0 +1,37 @@
+.post-featured-container {
+  display: flex;
+}
+
+.post-featured-item-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  padding: 1em;
+}
+
+.post-featured-text-container {
+  display: block;
+  padding: 1em;
+}
+
+.post-featured-header {
+}
+
+.post-featured-image-container {
+  position: relative;
+}
+
+.post-featured-image {
+  border-radius: 5px;
+}
+
+.post-featured-meta {
+  font-size: $small-font-size;
+  color: $brand-color;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  padding: 5px;
+  background-color: $background-color;
+  border-radius: 5px;
+}

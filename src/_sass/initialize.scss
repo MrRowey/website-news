@@ -46,5 +46,8 @@ $on-large:         $on-laptop !default;
   "custom-variables", // Hook to override predefined variables.
   "base",             // Defines element resets.
   "layout",           // Defines structure and style based on CSS selectors.
+  "post/regular",     // Defines style for regular posts.
+  "post/featured",    // Defines style for regular posts.
+  "post/small",       // Defines style for regular posts.
   "custom-styles"     // Hook to override existing styles.
 ;

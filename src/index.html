@@ -8,48 +8,26 @@
 
     {%- include head.html -%}
 
-    {% comment %} Some defaults that are used below {% endcomment %}
-    {% assign path = "assets/thumbnails-wide/" %}
-    {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-
     {% comment %} Filter and sort out the available posts {% endcomment %}
     {% assign posts = site.posts | sort: "priority" | reverse %} {% assign livePosts = site.posts | where: "status" , 'live' %} 
     {% assign featuredLivePosts = livePosts | where: "type", 'featured' %} 
     {% assign regularLivePosts = livePosts | where: "type", 'regular' %} 
 
     <section class="wrapper">
-        <div class="featured-container">
-        {%- if featuredLivePosts.size > 0 -%} {% assign featuredLivePost = featuredLivePosts | first %}
-
-        <a class="post-featured-container" href="{{ featuredLivePost.url | relative_url }}">
-            <div class="post-featured-image-container">
-                <img class="post-featured-image" src="{{ path | append: featuredLivePost.thumbnail | relative_url }}" />
-                <span class="post-featured-meta">{{ featuredLivePost.date | date: date_format }}</span>
-            </div>
-            <div class="post-featured-text-container">
-                <h3 class="post-featured-header">{{ featuredLivePost.title | escape }}</h3>
-                <span class="post-featured-excerpt"> {{ featuredLivePost.content }} </span>
-            </div>
-        </a>
+        <div class="post-featured-container">
+        {%- if featuredLivePosts.size > 0 -%} 
+            {% assign featuredLivePost = featuredLivePosts | first %}
+            {% include post/featured.html post=featuredLivePost  %}
         {%- endif -%}
         </div>
 
         {%- if regularLivePosts.size > 0 -%}
 
-        <ul class="regular-container">
+        <ul class="post-regular-container">
         {%- for post in regularLivePosts -%}
-        <li >
-            <a class="post-regular-container" href="{{ post.url | relative_url }}">
-                <div class="post-regular-image-container">
-                    <img class="post-regular-image" src="{{ path | append: post.thumbnail | relative_url }}" />
-                    <span class="post-regular-meta">{{ post.date | date: date_format }}</span>
-                </div>
-                <div class="post-regular-text-container">
-                    <h3 class="post-regular-header">{{ post.title | escape }}</h3>
-                    <span class="post-regular-excerpt"> {{ post.content }} </span>
-                </div>
-            </a>
-        </li>
+            <li>
+                {% include post/regular.html post=post  %}
+            </li>
         {%- endfor -%}
         </ul>
     </section>

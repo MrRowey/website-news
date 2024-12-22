@@ -1,0 +1,20 @@
+{% comment %} 
+
+    Input parameters:
+    - post: an instance of a post
+
+{% endcomment %}
+
+{% assign path = "assets/thumbnails-wide/" %}
+{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+
+<a class="post-regular-item-container" href="{{ include.post.url | relative_url }}">
+    <div class="post-regular-image-container">
+        <img class="post-regular-image" src="{{ path | append: include.post.thumbnail | relative_url }}" />
+        <span class="post-regular-meta">{{ include.post.date | date: date_format }}</span>
+    </div>
+    <div class="post-regular-text-container">
+        <h3 class="post-regular-header">{{ include.post.title | escape }}</h3>
+        <span class="post-regular-excerpt"> {{ include.post.content }} </span>
+    </div>
+</a>

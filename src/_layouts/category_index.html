@@ -2,7 +2,6 @@
 layout: base
 ---
 
-
 {% comment %} 
 
 The scope of this layout is influenced by this plugin:
@@ -10,12 +9,10 @@ The scope of this layout is influenced by this plugin:
 
 {% endcomment %}
 
-Hello!
-
-{{ page.posts | inspect }}
-
-<ul>
-{% for category in page.categories %}
-<li><a href="{{ site.url }}/path-to-category-index/{{ category | slugify }}/index.html">{{ category }}</a></li>
+<ul class="post-small-container">
+{% for post in page.posts %}
+  <li>
+    {% include post/small.html post=post  %}
+  </li>
 {% endfor %}
 </ul>
