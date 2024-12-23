@@ -25,12 +25,15 @@
 .post-small-image-container {
   position: relative;
 
-  overflow: hidden; /* Ensures excess image content is clipped */
+  overflow: hidden;
+  /* Ensures excess image content is clipped */
   display: flex;
-  justify-content: center; /* Center the image horizontally */
-  align-items: center; /* Center the image vertically */
+  justify-content: center;
+  /* Center the image horizontally */
+  align-items: center;
+  /* Center the image vertically */
 
-  aspect-ratio: 1/1;
+  aspect-ratio: 1 / 1;
   width: 100%;
 }
 
