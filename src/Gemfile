@@ -10,18 +10,45 @@ source "https://rubygems.org"
 # Therefore all versions are fixed to match with the following website: 
 # - https://pages.github.com/versions/
 
-# If you want to use GitHub Pages, remove the "gem "jekyll"" above and
-# uncomment the line below. To upgrade, run `bundle update github-pages`.
 gem "github-pages", group: :jekyll_plugins
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
+
+  # Used to automatically generate the RRS feed
+  # - https://github.com/jekyll/jekyll-feed
+
   gem "jekyll-feed","~> 0.17.0"
+
+  # Used to provide us with the capability to redirect users. 
+  # - https://github.com/jekyll/jekyll-redirect-from
+
   gem "jekyll-redirect-from", "~> 0.16.0"
+
+  # Used to expose metadata of the repository.
+  # - https://github.com/jekyll/github-metadata
+
   gem "jekyll-github-metadata", "~> 2.16.1"
+
+  # Used to generate (meta) tags for search engine optimization (SEO).
+  # - https://github.com/jekyll/jekyll-seo-tag
+  
   gem "jekyll-seo-tag", "~> 2.1"
+
+  # Used to add support for pagination. Especially useful for the next plugin that generates a page for each category.
+  # - https://github.com/jekyll/jekyll-paginate
+
   gem "jekyll-paginate"
+
+  # Used to generate a page for each category.
+  # - https://github.com/field-theory/jekyll-category-pages
+
   gem "jekyll-category-pages"
+
+  # Used to generate images of various sizes to speed up page loading on mobile phones.
+  # - https://github.com/MichaelCurrin/jekyll-resize
+
+  gem "jekyll-resize", git: "https://github.com/MichaelCurrin/jekyll-resize"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
