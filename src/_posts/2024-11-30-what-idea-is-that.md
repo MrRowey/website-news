@@ -2,7 +2,7 @@
 layout: post
 title: What idea is that!
 date: 2024-11-30 12:32:04 +0100
-thumbnail: what-idea-is-that.png
+thumbnail: tournament-event-01-2024.png
 categories: community
 type: regular
 status: live

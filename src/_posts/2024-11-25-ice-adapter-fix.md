@@ -2,7 +2,7 @@
 layout: post
 title: Fix for the ICE adapter is live
 date: 2024-11-26 12:32:04 +0100
-thumbnail: ice-fix-2024.png
+thumbnail: tournament-event-01-2024.png
 categories: development
 type: featured
 status: live

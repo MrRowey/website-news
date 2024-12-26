@@ -27,6 +27,7 @@
 }
 
 .post-regular-image-container {
+  position: relative;
   overflow: hidden;
   /* Ensures excess image content is clipped */
   display: flex;

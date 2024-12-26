@@ -2,7 +2,7 @@
 layout: post
 title: First 10 Minutes of Every Game Made Easy
 date: 2024-11-26 12:32:04 +0100
-thumbnail: build-orders-2024.png
+thumbnail: tournament-event-01-2024.png
 categories: guide
 type: regular
 status: live

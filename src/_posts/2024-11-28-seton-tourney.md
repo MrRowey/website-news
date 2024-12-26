@@ -2,7 +2,7 @@
 layout: post
 title: Seton's Clutch tourney 2024
 date: 2024-11-28 12:32:04 +0100
-thumbnail: seton-tourney-2024.png
+thumbnail: tournament-event-01-2024.png
 categories: tournament
 type: regular
 status: live
