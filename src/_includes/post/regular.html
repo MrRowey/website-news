@@ -24,7 +24,12 @@
       >
       <img class="post-regular-image" src="{{ imagePath }}">
     </picture>
-    <span class="post-regular-meta">{{ include.post.date | date: date_format }}</span>
+
+    {%- if include.post.event -%}
+      <span class="post-regular-meta">
+        {% include post/event/schedule.html event=include.post.event %}
+      </span>
+    {%- endif -%}
   </div>
   <div class="post-regular-text-container">
     <h3 class="post-regular-header">{{ include.post.title | escape }}</h3>

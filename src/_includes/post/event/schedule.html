@@ -1,0 +1,21 @@
+{% comment %}
+  Input parameters:
+  - event: all information related to an event
+{% endcomment %}
+
+{%- if include.event.startsAt or include.event.endsAt -%}
+  <button>test</button>
+  <span>
+    {%- if include.event.startsAt -%}
+      {{ include.event.startsAt | date: date_format }}
+    {%- endif -%}
+
+    {%- if include.event.startsAt and include.event.endsAt -%}
+      <span> to </span>
+    {%- endif -%}
+
+    {%- if include.event.endsAt -%}
+      {{ include.event.endsAt | date: date_format }}
+    {%- endif -%}
+  </span>
+{%- endif -%}
