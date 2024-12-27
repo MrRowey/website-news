@@ -10,8 +10,18 @@
   <div class="post-regular-image-container">
     <picture>
       {% assign imagePath = path | append: include.post.thumbnail | relative_url %}
-      <source media="(min-width: 800px)" srcset="{{ imagePath | resize: "800x800>" }}">
-      <source media="(max-width: 800px)" srcset="{{ imagePath | resize: "300x300>" }}">
+      <source
+        media="(max-width: 960px)"
+        srcset="{{ imagePath | resize: "240x135>" | relative_url }}"
+      >
+      <source
+        media="(max-width: 1920px)"
+        srcset="{{ imagePath | resize: "480x270>" | relative_url }}"
+      >
+      <source
+        media="(max-width: 2560px)"
+        srcset="{{ imagePath | resize: "960x540>" | relative_url }}"
+      >
       <img class="post-regular-image" src="{{ imagePath }}">
     </picture>
     <span class="post-regular-meta">{{ include.post.date | date: date_format }}</span>

@@ -8,7 +8,22 @@
 
 <a class="post-featured-item-container" href="{{ featuredLivePost.url | relative_url }}">
   <div class="post-featured-image-container">
-    <img class="post-featured-image" src="{{ path | append: featuredLivePost.thumbnail | relative_url }}">
+    <picture>
+      {% assign imagePath = path | append: include.post.thumbnail | relative_url %}
+      <source
+        media="(max-width: 480px)"
+        srcset="{{ imagePath | resize: "240x135>" | relative_url }}"
+      >
+      <source
+        media="(max-width: 960px)"
+        srcset="{{ imagePath | resize: "480x270>" | relative_url }}"
+      >
+      <source
+        media="(max-width: 1920px)"
+        srcset="{{ imagePath | resize: "960x540>" | relative_url }}"
+      >
+      <img class="post-regular-image" src="{{ imagePath }}">
+    </picture>
     <span class="post-featured-meta">{{ featuredLivePost.date | date: date_format }}</span>
   </div>
   <div class="post-featured-text-container">
