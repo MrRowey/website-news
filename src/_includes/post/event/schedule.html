@@ -4,7 +4,6 @@
 {% endcomment %}
 
 {%- if include.event.startsAt or include.event.endsAt -%}
-  <button>test</button>
   <span>
     {%- if include.event.startsAt -%}
       {{ include.event.startsAt | date: date_format }}

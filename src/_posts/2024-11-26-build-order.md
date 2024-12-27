@@ -10,3 +10,5 @@ priority: 700
 ---
 
 Build orders are crucial to getting your economy off to a healthy start, learn the best practices when starting a game with TheGreenSquier!
+
+<!-- excerpt-end -->

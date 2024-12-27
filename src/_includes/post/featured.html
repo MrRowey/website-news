@@ -33,6 +33,13 @@
   </div>
   <div class="post-featured-text-container">
     <h3 class="post-featured-header">{{ include.post.title | escape }}</h3>
-    <span class="post-featured-excerpt"> {{ include.post.content }} </span>
+
+    {% comment %}
+      We can only support so many characters in the overview, therefore we truncate it.
+    {% endcomment %}
+
+    <span class="post-featured-excerpt">
+      {{ include.post.excerpt | truncate: 600 }}
+    </span>
   </div>
 </a>
