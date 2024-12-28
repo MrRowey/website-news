@@ -9,7 +9,7 @@
 <a class="post-small-item-container post-card" href="{{ include.post.url | relative_url }}">
   <div class="post-small-image-container">
     <picture class="post-small-picture">
-      {% assign imagePath = path | append: include.post.thumbnail | relative_url %}
+      {% assign imagePath = path | append: include.post.thumbnail %}
       <source
         media="(max-width: 360px)"
         srcset="{{ imagePath | resize: "240x135>" | relative_url }}"
@@ -22,7 +22,7 @@
         media="(max-width: 1200px)"
         srcset="{{ imagePath | resize: "960x540>" | relative_url }}"
       >
-      <img class="post-small-image" src="{{ imagePath }}">
+      <img class="post-small-image" src="{{ imagePath | relative_url }}">
     </picture>
 
     {%- if include.post.event -%}
