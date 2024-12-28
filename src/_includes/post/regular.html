@@ -12,15 +12,15 @@
       {% assign imagePath = path | append: include.post.thumbnail %}
       <source
         media="(max-width: 960px)"
-        srcset="{{ imagePath | resize: "240x135>" | relative_url }}"
+        srcset="{{ imagePath | resize: "240x135>" }}"
       >
       <source
         media="(max-width: 1920px)"
-        srcset="{{ imagePath | resize: "480x270>" | relative_url }}"
+        srcset="{{ imagePath | resize: "480x270>" }}"
       >
       <source
         media="(max-width: 2560px)"
-        srcset="{{ imagePath | resize: "960x540>" | relative_url }}"
+        srcset="{{ imagePath | resize: "960x540>" }}"
       >
       <img class="post-regular-image" src="{{ imagePath | relative_url }}">
     </picture>
