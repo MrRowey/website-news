@@ -6,10 +6,12 @@ layout: base
    - https://github.com/field-theory/jekyll-category-pages#template-for-category-pages
 {% endcomment %}
 
-<ul class="post-small-container">
-  {% for post in page.posts %}
-    <li>
-      {% include post/small.html post=post %}
-    </li>
-  {% endfor %}
-</ul>
+<section class="wrapper">
+  <ul class="post-small-container">
+    {% for post in page.posts %}
+      <li>
+        {% include post/small.html post=post %}
+      </li>
+    {% endfor %}
+  </ul>
+</section>
