@@ -2,20 +2,22 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1em;
-  padding: 1em;
+  margin: 1em;
 
   // mobile layout
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
   }
-
   margin: 0;
   list-style: none;
 }
 
 .post-regular-item-container {
-  display: grid;
-  grid-template-rows: 1fr;
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+  width: 100%;
 }
 
 .post-regular-text-container {

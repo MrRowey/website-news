@@ -1,12 +1,12 @@
 .post-featured-container {
   display: flex;
+  padding: 1em;
+  padding-top: 3em;
 }
 
 .post-featured-item-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
-  padding: 1em;
 }
 
 .post-featured-text-container {
