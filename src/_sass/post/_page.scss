@@ -1,0 +1,75 @@
+.post-page-container {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+  }
+  
+  .post-page-item-container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 4fr;
+  
+    @media screen and (max-width: $on-medium) {
+      grid-template-rows: 200px 1fr;
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .post-page-text-container {
+    display: block;
+    padding: 1em;
+  }
+  
+  .post-page-header {
+  }
+  
+  .post-page-image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .post-page-picture {
+    overflow: hidden;
+    /* Ensures excess image content is clipped */
+    display: flex;
+    justify-content: center;
+    /* Center the image horizontally */
+    align-items: center;
+    /* Center the image vertically */
+  
+    object-fit: cover;
+    object-position: center;
+  
+    aspect-ratio: 1/1;
+    width: 100%;
+  
+    @media screen and (max-width: $on-medium) {
+      aspect-ratio: 16 / 9;
+    }
+  }
+  
+  .post-page-image {
+    border-radius: 5px;
+  
+    height: 100%;
+    width: auto;
+  
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .post-page-image-meta {
+    font-size: $small-font-size;
+    color: $brand-color;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    padding: 5px;
+    background-color: $background-color;
+    border-radius: 5px;
+  }
+  
