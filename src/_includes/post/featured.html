@@ -13,15 +13,15 @@
       <source
         media="(max-width: 480px)"
         srcset="{{ imagePath | resize: "240x135>" }}"
-      ></source>
+      >
       <source
         media="(max-width: 960px)"
         srcset="{{ imagePath | resize: "480x270>" }}"
-      ></source>
+      >
       <source
         media="(max-width: 1920px)"
         srcset="{{ imagePath | resize: "960x540>" }}"
-      ></source>
+      >
       <img class="post-regular-image" src="{{ imagePath | relative_url }}">
     </picture>
 

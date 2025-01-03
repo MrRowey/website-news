@@ -38,16 +38,12 @@ plugins:
   - jekyll-redirect-from
   - jekyll-github-metadata
   - jekyll-category-pages
-  - jekyll-tidy
   - jekyll-subresource-integrity-hook
 
 # Settings for jekyll-category-pages
 # See also: https://github.com/field-theory/jekyll-category-pages
 category_layout: category_index.html
 category_path: category
-
-jekyll_tidy:
-  compress_html: false
 
 # If you want to link only specific pages in your header, use this and add the path to the pages
 # in order as they should show up.
