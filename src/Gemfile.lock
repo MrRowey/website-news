@@ -1,8 +1,8 @@
 GIT
-  remote: https://github.com/Garanas/jekyll-sub-resource-integrity-hook
-  revision: 9c19df43a5aec2563ffd20e45b96e96fde4c012b
+  remote: https://github.com/Garanas/jekyll-subresource-integrity-hook
+  revision: c3e122eb940e854b5b630b6e7865590ff10e3880
   specs:
-    jekyll-sub-resource-integrity-hook (0.0.1)
+    jekyll-subresource-integrity-hook (0.0.1)
       jekyll (> 3.3, < 5.0)
       nokogiri (~> 1.18.1)
 
@@ -17,7 +17,7 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (8.0.0.1)
+    activesupport (8.0.1)
       base64
       benchmark (>= 0.3)
       bigdecimal
@@ -34,7 +34,7 @@ GEM
       public_suffix (>= 2.0.2, < 7.0)
     base64 (0.2.0)
     benchmark (0.4.0)
-    bigdecimal (3.1.8)
+    bigdecimal (3.1.9)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -236,7 +236,7 @@ GEM
       gemoji (>= 3, < 5)
       html-pipeline (~> 2.2)
       jekyll (>= 3.0, < 5.0)
-    json (2.9.0)
+    json (2.9.1)
     kramdown (2.4.0)
       rexml
     kramdown-parser-gfm (1.1.0)
@@ -245,7 +245,7 @@ GEM
     listen (3.9.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
-    logger (1.6.2)
+    logger (1.6.4)
     mercenary (0.3.6)
     mini_magick (4.13.2)
     minima (2.5.1)
@@ -281,7 +281,7 @@ GEM
     sawyer (0.9.2)
       addressable (>= 2.3.5)
       faraday (>= 0.17.3, < 3)
-    securerandom (0.4.0)
+    securerandom (0.4.1)
     simpleidn (0.2.3)
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
@@ -310,7 +310,7 @@ DEPENDENCIES
   jekyll-redirect-from (~> 0.16.0)
   jekyll-resize!
   jekyll-seo-tag (~> 2.1)
-  jekyll-sub-resource-integrity-hook!
+  jekyll-subresource-integrity-hook!
   tzinfo (>= 1, < 3)
   tzinfo-data
   wdm (~> 0.1)
