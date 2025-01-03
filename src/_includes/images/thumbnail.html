@@ -1,0 +1,24 @@
+{% comment %}
+  Input parameters:
+  - url: the src attribute of the image
+  - alt: the alt attribute of the image
+{% endcomment %}
+
+{% assign assetsFolder = 'assets/thumbnails-wide/' %}
+
+<picture>
+  {% assign imagePath = assetsFolder | append: include.url %}
+  <source
+    media="(max-width: 960px)"
+    srcset="{{ imagePath | resize: "240x135>" }}"
+  >
+  <source
+    media="(max-width: 1920px)"
+    srcset="{{ imagePath | resize: "480x270>" }}"
+  >
+  <source
+    media="(max-width: 2560px)"
+    srcset="{{ imagePath | resize: "960x540>" }}"
+  >
+  <img class="thumbnail-image" src="{{ imagePath | relative_url }}" alt="{{include.alt}}">
+</picture>

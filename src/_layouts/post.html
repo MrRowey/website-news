@@ -22,18 +22,7 @@ layout: base
     </header>
 
     <div class="post-page-image-container">
-      <picture>
-        {% assign imagePath = path | append: page.thumbnail %}
-        <source
-          media="(max-width: 480px)"
-          srcset="{{ imagePath | resize: "480x270>" }}"
-        >
-        <source
-          media="(max-width: 960px)"
-          srcset="{{ imagePath | resize: "960x540>" }}"
-        >
-        <img class="post-regular-image" src="{{ imagePath | relative_url }}">
-      </picture>
+      {% include images/banner.html url=page.thumbnail %}
 
       {%- if page.event -%}
         <span class="post-page-image-meta">
