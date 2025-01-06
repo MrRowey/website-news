@@ -17,8 +17,8 @@ $table-text-align: left !default;
 // Width of the content area
 $content-width: 1200px !default;
 
-$on-palm: 600px !default;
-$on-laptop: 800px !default;
+$on-palm: 800px !default;
+$on-laptop: 1200px !default;
 
 $on-medium: $on-palm !default;
 $on-large: $on-laptop !default;
@@ -43,7 +43,9 @@ $on-large: $on-laptop !default;
 }
 
 @import // Hook to override predefined variables.
+  "normalize",
   "base",
+  "wrapper",
   // Defines element resets.
   "layout",
 

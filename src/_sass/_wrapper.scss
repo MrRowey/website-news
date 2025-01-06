@@ -1,0 +1,41 @@
+/**
+ * Clearfix
+ */
+%clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/**
+ * Wrapper
+ */
+.wrapper {
+  @extend %clearfix;
+
+  display: grid;
+  grid-gap: 1em 0;
+
+
+  /** Desktop layout */
+  @media (min-width: $on-large) {
+    // background-color: red;
+    grid-template-columns: 1fr [breakout-start] 200px [content-start] 4fr [content-end] 200px [breakout-end] 1fr;
+  }
+
+  /** Tablet layout */
+  @media (min-width: $on-medium) and (max-width: $on-large) {
+    // background-color: blue;
+    grid-template-columns: [breakout-start] 200px [content-start] 4fr [content-end] 200px [breakout-end];
+  }
+
+  /** Phone layout */
+  @media (max-width: $on-medium) {
+    // background-color: green;
+    grid-template-columns: [breakout-start] [content-start] 1fr [content-end] [breakout-end];
+  }
+}
+
+.wrapper-body {
+    padding: 1em;
+}

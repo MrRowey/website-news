@@ -17,7 +17,7 @@ layout: base
 
 {% assign regularLivePosts = livePosts | where: 'type', 'regular' %}
 
-<section class="wrapper">
+<section class="wrapper wrapper-body">
   <section class="top-container">
     <div class="post-featured-container">
       {%- if featuredLivePosts.size > 0 -%}
@@ -33,6 +33,12 @@ layout: base
             {% include components/divider.html %}
           </li>
         {%- endfor -%}
+
+        <li class="post-event-item">
+          <a class="post-event-item-container" href="">
+            <h4 class="post-event-header">Want to see your event here? Inform the promotions team!</h4>
+          </a>
+        </li>
       </ul>
     </div>
   </section>

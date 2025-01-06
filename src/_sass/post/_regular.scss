@@ -10,6 +10,9 @@
   }
   margin: 0;
   list-style: none;
+
+  grid-column: content-start / content-end;
+  grid-row: 2/2;
 }
 
 .post-regular-item-container {
