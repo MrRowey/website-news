@@ -1,38 +1,49 @@
 ---
+layout: base
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 ---
+{% comment %}
+  Filter and sort out the available posts
+{% endcomment %}
 
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+{% assign posts = site.posts | sort: 'priority' | reverse %}
 
-    {%- include head.html -%}
+{% assign livePosts = site.posts | where: 'status', 'live' %}
 
-    {% comment %} Filter and sort out the available posts {% endcomment %}
-    {% assign posts = site.posts | sort: "priority" | reverse %} {% assign livePosts = site.posts | where: "status" , 'live' %} 
-    {% assign featuredLivePosts = livePosts | where: "type", 'featured' %} 
-    {% assign regularLivePosts = livePosts | where: "type", 'regular' %} 
+{% assign eventLivePosts = livePosts | where_exp: 'post', 'post.event' | slice: 0, 5 %}
 
-    <section class="wrapper">
-        <div class="post-featured-container">
-        {%- if featuredLivePosts.size > 0 -%} 
-            {% assign featuredLivePost = featuredLivePosts | first %}
-            {% include post/featured.html post=featuredLivePost  %}
-        {%- endif -%}
-        </div>
+{% assign featuredLivePosts = livePosts | where: 'type', 'featured' %}
 
-        {%- if regularLivePosts.size > 0 -%}
+{% assign regularLivePosts = livePosts | where: 'type', 'regular' %}
 
-        <ul class="post-regular-container">
-        {%- for post in regularLivePosts -%}
-            <li>
-                {% include post/regular.html post=post  %}
-            </li>
+<section class="wrapper">
+  <section class="top-container">
+    <div class="post-featured-container">
+      {%- if featuredLivePosts.size > 0 -%}
+        {% assign featuredLivePost = featuredLivePosts | first %}
+        {% include post/featured.html post=featuredLivePost %}
+      {%- endif -%}
+    </div>
+    <div class="post-event-container ">
+      <ul class="post-event-list post-card">
+        {%- for postEvent in eventLivePosts -%}
+          <li class="post-event-item">
+            {% include post/event.html post=postEvent %}
+            {% include components/divider.html %}
+          </li>
         {%- endfor -%}
-        </ul>
-    </section>
-    {%- endif -%}
+      </ul>
+    </div>
+  </section>
 
-    {%- include footer.html -%}
-
-</html>
+  {%- if regularLivePosts.size > 0 -%}
+    <ul class="post-regular-container">
+      {%- for post in regularLivePosts -%}
+        <li>
+          {% include post/regular.html post=post %}
+        </li>
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+</section>

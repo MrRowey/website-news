@@ -1,0 +1,9 @@
+{% comment %}
+  Input parameters:
+  - post: an instance of a post
+{% endcomment %}
+
+<a class="post-event-item-container" href="{{ include.post.url | relative_url }}">
+  <span class="post-event-date"> {% include post/event/schedule.html event=include.post.event %}</span>
+  <h4 class="post-event-header">{{ include.post.title | escape }}</h4>
+</a>

@@ -1,0 +1,37 @@
+.post-event-container {
+  padding: 1em;
+  display: flex;
+}
+
+.post-event-list {
+  margin: 0;
+  padding: 1em;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  width: 100%;
+}
+
+.post-event-item {
+  display: grid;
+  grid-template-rows: 1fr min-content;
+  gap: 0.25em;
+}
+
+.post-event-header {
+  font-size: 0.8em;
+  margin: 0;
+}
+
+.post-event-date {
+  font-size: 0.6em;
+}
+
+.post-event-excerpt {
+  font-size: 0.75em;
+
+  > p {
+    margin: 0;
+  }
+}
