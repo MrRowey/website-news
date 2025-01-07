@@ -44,10 +44,10 @@ layout: base
   </section>
 
   {%- if regularLivePosts.size > 0 -%}
-    <ul class="post-regular-container">
+    <ul class="post-small-container">
       {%- for post in regularLivePosts -%}
         <li>
-          {% include post/regular.html post=post %}
+          {% include post/small.html post=post %}
         </li>
       {%- endfor -%}
     </ul>
