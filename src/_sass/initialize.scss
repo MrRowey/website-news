@@ -45,8 +45,9 @@ $on-large: $on-laptop !default;
 @import // Hook to override predefined variables.
   "normalize",
   "base",
+  "header",
+  "footer",
   "wrapper",
-  // Defines element resets.
   "layout",
 
   "post/regular",
