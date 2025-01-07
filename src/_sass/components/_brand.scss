@@ -1,0 +1,25 @@
+.brand-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    height: 48px;
+}
+
+.brand-logo {
+    width: 48px;
+    height: 48px;
+}
+
+.brand-text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-text-name {
+    
+}
+
+.brand-text-goal {
+    font-size: 0.75rem;
+    color: grey;
+}
