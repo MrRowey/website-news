@@ -54,6 +54,8 @@ group :jekyll_plugins do
   # - https://github.com/Garanas/jekyll-sub-resource-integrity-hook
 
   gem 'jekyll-subresource-integrity-hook', git: "https://github.com/Garanas/jekyll-subresource-integrity-hook"
+
+  gem 'jekyll-transcode-image-filters', git: "https://github.com/Garanas/jekyll-transcode-image-filters"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
