@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: https://github.com/Garanas/jekyll-transcode-image-filters
-  revision: 2576fe8c8164ed96fbce90ddb2f10d61117925dd
+  revision: 3d523f9db45bdd542f64ecfe762f39015ee68f86
   specs:
     jekyll-transcode-image-filters (0.0.1)
       jekyll (> 3.3, < 5.0)
