@@ -2,7 +2,6 @@
 layout: post
 title: Winter tourney 2024
 date: 2024-12-20 12:32:04 +0100
-thumbnail: remainders.png
 categories: tournament
 type: regular
 status: live
@@ -10,6 +9,10 @@ priority: 600
 event:
     startsAt: 2024-12-20 12:00:00 +0100
     endsAt: 2024-12-20 23:00:00 +0100
+
+thumbnails: 
+    - file: remainders.png
+      alt: description of image
 ---
 
 Lorem ipsum odor amet, consectetuer adipiscing elit. Dignissim nisl commodo mus penatibus venenatis sed habitasse aptent litora! Vulputate semper curae quisque inceptos, morbi pharetra maximus sem. Senectus nam facilisi vestibulum; consectetur ornare sociosqu. Maximus malesuada hac ac litora finibus auctor ultrices vel. Tempor dolor duis per netus habitasse. Arcu curabitur rutrum convallis malesuada morbi ornare et. Porta morbi curabitur molestie, litora dictumst montes.

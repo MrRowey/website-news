@@ -2,7 +2,6 @@
 layout: post
 title: Summer tourney 2024
 date: 2024-07-20 12:32:04 +0100
-thumbnail: uef-base.png
 categories: tournament
 type: regular
 status: live
@@ -10,6 +9,10 @@ priority: 600
 event:
     startsAt: 2024-07-20 09:00:00 +0100
     endsAt: 2024-07-20 16:00:00 +0100
+
+thumbnails: 
+    - file: uef-base.png
+      alt: description of image
 ---
 
 Lorem ipsum odor amet, consectetuer adipiscing elit. Conubia facilisi eleifend sodales ornare, quisque ad. Tincidunt montes vestibulum ad mi senectus suspendisse platea. Vehicula lorem class netus gravida tempor enim orci penatibus vulputate. Integer lacinia libero pharetra adipiscing elit platea condimentum? Etiam fusce enim torquent natoque magnis. At taciti himenaeos massa cursus ullamcorper lacus rhoncus. Mollis condimentum nam viverra fermentum nec.

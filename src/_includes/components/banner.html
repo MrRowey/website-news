@@ -1,7 +1,7 @@
 {% comment %}
 
   Input parameters:
-  - url: the src attribute of the image
+  - file: the src attribute of the image
   - alt: the alt attribute of the image
 
   Related documentation:
@@ -15,7 +15,7 @@
 {% assign assetsFolder = 'assets/thumbnails-wide/' %}
 
 <picture>
-  {% assign imagePath = assetsFolder | append: include.url %}
+  {% assign imagePath = assetsFolder | append: include.file %}
   
   {% comment %} AVIF {% endcomment %}
 

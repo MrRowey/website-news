@@ -2,7 +2,6 @@
 layout: post
 title: Fall tourney 2024
 date: 2024-12-20 12:32:04 +0100
-thumbnail: remainders.png
 categories: tournament
 type: regular
 status: live
@@ -10,6 +9,10 @@ priority: 600
 event:
     startsAt: 2024-09-21 10:00:00 +0100
     endsAt: 2024-09-21 22:00:00 +0100
+
+thumbnails: 
+    - file: remainders.png
+      alt: description of image
 ---
 
 Lorem ipsum odor amet, consectetuer adipiscing elit. Ornare nunc vel in fringilla nostra diam ultricies luctus. Tempor scelerisque ipsum blandit ultrices neque eros maecenas! Ridiculus accumsan mauris ut nostra taciti. Curae elementum per porta urna nunc tortor. Malesuada aptent euismod vivamus facilisis interdum ridiculus netus scelerisque. Phasellus libero augue feugiat laoreet dis nostra facilisis sollicitudin malesuada. Sagittis lacinia dui ultrices litora; aliquam hendrerit viverra fringilla. Dictumst vitae bibendum ante magnis diam nibh. Libero platea nulla accumsan torquent nullam torquent in aliquam senectus.

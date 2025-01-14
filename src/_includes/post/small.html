@@ -7,7 +7,8 @@
 
 <a class="post-small-item-container post-card" href="{{ include.post.url | relative_url }}">
   <div class="post-small-image-container">
-    {% include components/thumbnail.html url=include.post.thumbnail %}
+    {% assign thumbnail = include.post.thumbnails | first  %}
+    {% include components/thumbnail.html file=thumbnail.file alt=thumbnail.alt %}
 
     {%- if include.post.event -%}
       <span class="post-regular-meta">

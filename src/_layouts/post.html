@@ -30,7 +30,8 @@ layout: base
     </header>
 
     <div class="post-page-image-container">
-      {% include components/banner.html url=page.thumbnail %}
+      {% assign thumbnail = page.thumbnails | first  %}
+      {% include components/banner.html file=thumbnail.file alt=thumbnail.alt %}
 
       {%- if page.event -%}
         <span class="post-page-image-meta">
