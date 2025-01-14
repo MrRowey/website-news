@@ -12,7 +12,7 @@ event:
 
 thumbnails: 
     - file: uef-base.png
-      alt: description of image
+      alt: A UEF base right before a strategic missile explodes.
 ---
 
 Lorem ipsum odor amet, consectetuer adipiscing elit. Conubia facilisi eleifend sodales ornare, quisque ad. Tincidunt montes vestibulum ad mi senectus suspendisse platea. Vehicula lorem class netus gravida tempor enim orci penatibus vulputate. Integer lacinia libero pharetra adipiscing elit platea condimentum? Etiam fusce enim torquent natoque magnis. At taciti himenaeos massa cursus ullamcorper lacus rhoncus. Mollis condimentum nam viverra fermentum nec.

@@ -12,7 +12,7 @@ event:
 
 thumbnails: 
     - file: remainders.png
-      alt: description of image
+      alt: The wreckages of a UEF base after a siege by the Aeon faction.
 ---
 
 Lorem ipsum odor amet, consectetuer adipiscing elit. Ornare nunc vel in fringilla nostra diam ultricies luctus. Tempor scelerisque ipsum blandit ultrices neque eros maecenas! Ridiculus accumsan mauris ut nostra taciti. Curae elementum per porta urna nunc tortor. Malesuada aptent euismod vivamus facilisis interdum ridiculus netus scelerisque. Phasellus libero augue feugiat laoreet dis nostra facilisis sollicitudin malesuada. Sagittis lacinia dui ultrices litora; aliquam hendrerit viverra fringilla. Dictumst vitae bibendum ante magnis diam nibh. Libero platea nulla accumsan torquent nullam torquent in aliquam senectus.

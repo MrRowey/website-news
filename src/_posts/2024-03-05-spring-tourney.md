@@ -13,7 +13,7 @@ event:
 
 thumbnails: 
     - file: uef-sacu-fight.png
-      alt: description of image
+      alt: A couple of UEF SACUs in the heat of battle.
 ---
 
 Lorem ipsum odor amet, consectetuer adipiscing elit. Mauris curabitur nullam penatibus in torquent, amet feugiat mattis sapien! Eu eros praesent ad interdum est nisi fringilla tristique. Molestie dapibus laoreet ridiculus erat cubilia imperdiet. Ex neque maximus; sapien mus varius natoque. Vitae integer montes sagittis condimentum augue aptent. Nascetur ligula praesent mus himenaeos laoreet nisi quis laoreet. Vehicula sed consectetur accumsan taciti feugiat eros vulputate varius tincidunt.

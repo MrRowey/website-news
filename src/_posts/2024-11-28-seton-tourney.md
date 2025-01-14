@@ -12,7 +12,7 @@ event:
 
 thumbnails: 
     - file: tournament-event-01-2024.png
-      alt: description of image
+      alt: A siege of Cybran amphibious units against a Seraphim base.
 ---
 
 Sign up for the upcoming King of Setons and Prince of Setons tournaments!

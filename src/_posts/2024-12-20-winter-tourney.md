@@ -12,7 +12,7 @@ event:
 
 thumbnails: 
     - file: remainders.png
-      alt: description of image
+      alt: A siege of Cybran amphibious units against a Seraphim base.
 ---
 
 Lorem ipsum odor amet, consectetuer adipiscing elit. Dignissim nisl commodo mus penatibus venenatis sed habitasse aptent litora! Vulputate semper curae quisque inceptos, morbi pharetra maximus sem. Senectus nam facilisi vestibulum; consectetur ornare sociosqu. Maximus malesuada hac ac litora finibus auctor ultrices vel. Tempor dolor duis per netus habitasse. Arcu curabitur rutrum convallis malesuada morbi ornare et. Porta morbi curabitur molestie, litora dictumst montes.
