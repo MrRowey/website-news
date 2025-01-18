@@ -7,6 +7,18 @@
 
 {%- if include.event.startsAt or include.event.endsAt -%}
   <span>
+
+    {% assign startsAt = include.event.startsAt | date: date_format %}
+    {% assign endsAt = include.event.endsAt | date: date_format %}
+
+    {% comment %}
+      Only show one date if they're both the same.
+    {% endcomment %}
+
+    {% if startsAt == endsAt %}
+      {{ startsAt }}
+    {%- else -%}
+
     {%- if include.event.startsAt -%}
       {{ include.event.startsAt | date: date_format }}
     {%- endif -%}
@@ -18,5 +30,7 @@
     {%- if include.event.endsAt -%}
       {{ include.event.endsAt | date: date_format }}
     {%- endif -%}
+
+    {% endif %}
   </span>
 {%- endif -%}

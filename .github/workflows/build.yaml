@@ -3,9 +3,19 @@ name: Build
 on:
   # Enable this workflow to be used by other workflows
   workflow_call:
+    inputs:
+      baseurl:
+        description: 'The base URL to use'
+        required: true
+        type: string
 
   # Enable this workflow to be triggered manually
   workflow_dispatch:
+    inputs:
+      baseurl:
+        description: 'The base URL to use'
+        required: true
+        type: string
 
 jobs:
   build:
@@ -40,7 +50,7 @@ jobs:
           key: cache-images-${{ hashFiles('src/assets/**') }}
 
       - name: Build with Jekyll
-        run: bundle exec jekyll build
+        run: bundle exec jekyll build --baseurl ${{ inputs.baseurl }}
         env:
           JEKYLL_ENV: production
 

@@ -6,6 +6,9 @@ categories: tournament
 type: regular
 status: live
 priority: 600
+
+redirectURL: https://forum.faforever.com/category/1/announcements
+
 event:
     startsAt: 2024-07-20 09:00:00 +0100
     endsAt: 2024-07-20 16:00:00 +0100

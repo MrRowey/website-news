@@ -5,16 +5,23 @@ on:
     branches-ignore: deploy/gh-pages
 
 jobs:
+  build:
+    name: Build the website
+    uses: ./.github/workflows/build.yaml
+    with:
+      baseurl: /
+
   lighthouse:
     # A tool to measure website performance. See also:
     # - https://github.com/GoogleChrome/lighthouse
     # - https://github.com/GoogleChrome/lighthouse-ci
     # - https://github.com/GoogleChrome/lighthouse-ci/blob/main/docs/getting-started.md
 
+    needs: [build]
     name: Lighthouse
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Clone Repository
         uses: actions/checkout@v4
 
       - name: Use Node.js 20.x
@@ -22,47 +29,20 @@ jobs:
         with:
           node-version: 20.x
 
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
+      - name: Download build artifact for CI
+        uses: actions/download-artifact@v4
         with:
-          ruby-version: "3.3"
-          bundler-cache: true
-          cache-version: 0
-          working-directory: "${{ github.workspace }}/src"
+          name: "build"
+          path: "src/_site/"
 
-      # Use a cache to (re)store images to speed up build process
-
-      - name: Restore cached images
-        id: cache-images-restore
-        uses: actions/cache/restore@v4
-        with: 
-          path: src/cache
-          key: cache-images-${{ hashFiles('src/assets/**') }}
-
-      # We need a development version because we need a base url of '' (empty string)
-      - name: Build the development version of the site
+      - name: Install NPM packages
         run: |
           npm ci
-          npm run build-dev 
-
-      # We store the images to speed up the build process
-
-      - name: Save images to cache
-        if: steps.cache-images-restore.outputs.cache-hit != 'true'
-        id: cache-images-save
-        uses: actions/cache/save@v4
-        with:
-          path: src/cache
-          key: ${{ steps.cache-images-restore.outputs.cache-primary-key }}
-
-      - name: Setup service worker
-        run: | 
-          npm run workbox-generate
 
       - name: Run lighthouse
         run: |
           npm run lighthouse
-  
+
       - name: Upload Lighthouse report
         uses: actions/upload-artifact@v3
         with:

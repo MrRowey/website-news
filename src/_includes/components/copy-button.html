@@ -1,0 +1,8 @@
+{% comment %} 
+       
+Input parameters: 
+- data: the data to copy to clipboard
+        
+{% endcomment %}
+
+<button class="copy-button" data-clipboard-text="{{ include.data }}" type="button"> <span class="icon-copy"></span> </button>

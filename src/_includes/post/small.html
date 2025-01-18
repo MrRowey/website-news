@@ -5,7 +5,7 @@
 
 {% assign path = 'assets/thumbnails-wide/' %}
 
-<a class="post-small-item-container post-card" href="{{ include.post.url | relative_url }}">
+<div class="post-small-item-container post-card">
   <div class="post-small-image-container">
     {% assign thumbnail = include.post.thumbnails | first  %}
     {% include components/thumbnail.html file=thumbnail.file alt=thumbnail.alt %}
@@ -16,6 +16,7 @@
       </span>
     {%- endif -%}
   </div>
+
   <div class="post-small-text-container">
     <h3 class="post-small-header">{{ include.post.title | escape }}</h3>
 
@@ -25,4 +26,9 @@
 
     <span class="post-small-excerpt"> {{ include.post.excerpt | truncate: 300 }} </span>
   </div>
-</a>
+
+  <div class="post-small-actions">
+    {% include components/url-button.html href=include.post.redirectURL %}
+    {% include components/copy-button.html data=include.post.redirectURL %}
+  </div>
+</div>

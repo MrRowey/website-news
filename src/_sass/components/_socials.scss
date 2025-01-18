@@ -4,25 +4,24 @@
   list-style: none;
   li {
     float: left;
-    margin: 5px 10px 5px 0;
+    margin: 4px;
+
+    border: 1px solid transparent;
+
     &:last-of-type {
       margin-right: 0;
     }
+
+    &:hover {
+      border: 1px solid $border-color-01;
+    }
+
     a {
       display: block;
-      padding: 10px 12px;
-      border: 1px solid $border-color-01;
+      padding: 4px;
       &:hover {
         border-color: $border-color-02;
       }
     }
   }
 }
-
-// .social-media-list &:hover {
-//   text-decoration: none;
-
-//   .username {
-//     text-decoration: underline;
-//   }
-// }

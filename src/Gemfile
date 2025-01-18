@@ -45,15 +45,8 @@ group :jekyll_plugins do
 
   gem "jekyll-category-pages"
 
-  # Used to generate images of various sizes to speed up page loading on mobile phones.
-  # - https://github.com/MichaelCurrin/jekyll-resize
-
-  gem "jekyll-resize", git: "https://github.com/MichaelCurrin/jekyll-resize"
-
-  # Used to generate the sub resource integrity (SRI) hash of linked assets.
-  # - https://github.com/Garanas/jekyll-sub-resource-integrity-hook
-
-  # gem 'jekyll-subresource-integrity-hook', git: "https://github.com/Garanas/jekyll-subresource-integrity-hook"
+  # Used to generate images of various sizes and formats to speed up page loading on mobile phones.
+  # - https://github.com/Garanas/jekyll-transcode-image-filters
 
   gem 'jekyll-transcode-image-filters', git: "https://github.com/Garanas/jekyll-transcode-image-filters"
 end

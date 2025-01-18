@@ -1,13 +1,13 @@
-{% comment %}
-  Input parameters:
-  - post: an instance of a post
+{% comment %} 
+  Input parameters: 
+  - post: an instance of a post 
 {% endcomment %}
 
 {% assign path = 'assets/thumbnails-wide/' %}
 
-<a class="post-featured-item-container post-card" href="{{ include.post.url | relative_url }}">
+<div class="post-featured-item-container post-card">
   <div class="post-featured-image-container">
-    {% assign thumbnail = include.post.thumbnails | first  %}
+    {% assign thumbnail = include.post.thumbnails | first %}
     {% include components/thumbnail.html file=thumbnail.file alt=thumbnail.alt %}
 
     {%- if include.post.event -%}
@@ -19,12 +19,17 @@
   <div class="post-featured-text-container">
     <h3 class="post-featured-header">{{ include.post.title | escape }}</h3>
 
-    {% comment %}
-      We can only support so many characters in the overview, therefore we truncate it.
+    {% comment %} 
+      We can only support so many characters in the overview, therefore we truncate it. 
     {% endcomment %}
 
     <span class="post-featured-excerpt">
       {{ include.post.excerpt | truncate: 600 }}
     </span>
+
+    <div class="post-featured-actions">
+      {% include components/url-button.html href=include.post.redirectURL %}
+      {% include components/copy-button.html data=include.post.redirectURL %}
+    </div>
   </div>
-</a>
+</div>

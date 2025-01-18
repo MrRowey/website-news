@@ -1,0 +1,68 @@
+/* Keyframes for the flash animation */
+@keyframes moveUpFadeOut {
+  0% {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-20px);
+    opacity: 0;
+  }
+}
+
+.copy-button {
+  background-color: #FFFFFF;
+  border: 0;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #111827;
+  font-size: .875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  padding: .50rem 0.75rem;
+  text-align: center;
+  text-decoration: none #D1D5DB solid;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+  // necessary for the animation
+  position: relative;
+
+  &:hover {
+    color: #007bff;
+    background-color: rgb(249,250,251);
+  }
+
+  &:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+  }
+
+  &:focus-visible {
+    box-shadow: none;
+  }
+
+
+  &::after {
+    content: "Copied!";
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #28a745;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease-out;
+  }
+
+
+  &.show-msg::after {
+    opacity: 1;
+    animation: moveUpFadeOut 1s linear;
+  }
+}

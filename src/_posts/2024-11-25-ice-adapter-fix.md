@@ -7,6 +7,8 @@ type: featured
 status: live
 priority: 1000
 
+redirectURL: https://forum.faforever.com/category/1/announcements
+
 thumbnails: 
     - file: tournament-event-01-2024.png
       alt: A siege of Cybran amphibious units against a Seraphim base.

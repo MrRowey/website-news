@@ -8,7 +8,8 @@
 }
 
 .post-featured-text-container {
-  display: block;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
   padding: 1em;
 }
 
@@ -32,4 +33,10 @@
   padding: 5px;
   background-color: $background-color;
   border-radius: 5px;
+}
+
+.post-featured-actions {
+  justify-self: end;
+  display: flex;
+  gap: 1em;
 }
