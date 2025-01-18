@@ -25,7 +25,7 @@ jobs:
     name: Build the website
     uses: ./.github/workflows/build.yaml
     with:
-      baseurl: /${{github.repository}}
+      baseurl: /Newshub
 
   deploy:
     environment:
