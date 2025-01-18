@@ -38,7 +38,6 @@ plugins:
   - jekyll-redirect-from
   - jekyll-github-metadata
   - jekyll-category-pages
-  - jekyll-subresource-integrity-hook
 
 # Settings for jekyll-category-pages
 # See also: https://github.com/field-theory/jekyll-category-pages

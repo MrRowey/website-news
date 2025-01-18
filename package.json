@@ -8,6 +8,10 @@
     "serve": "cd src && bundle exec jekyll serve --config=_config.dev.yml",
     "workbox-wizard": "workbox wizard",
     "workbox-generate": "workbox generateSW config/workbox-config.js",
+    "minify-html": "node scripts/minify-html.js",
+    "minify-css": "node scripts/minify-css.js",
+    "minify-js": "node scripts/minify-js.js",
+    "minify": "npm run minify-html && npm run minify-css && npm run minify-js",
     "lighthouse": "lhci collect --config config/lighthouserc.json"
   },
   "author": "",
@@ -15,6 +19,12 @@
   "description": "",
   "devDependencies": {
     "@lhci/cli": "^0.14.0",
+    "cssnano": "^7.0.6",
+    "glob": "^11.0.1",
+    "html-minifier-terser": "^7.2.0",
+    "postcss": "^8.5.1",
+    "postcss-cli": "^11.0.0",
+    "uglify-js": "^3.19.3",
     "workbox-cli": "^7.3.0"
   }
 }

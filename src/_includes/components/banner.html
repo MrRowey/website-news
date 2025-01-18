@@ -1,92 +1,95 @@
-{% comment %}
+{% comment %} 
+       
+Input parameters: 
+- file: the src attribute of the image 
+- alt: the alt attribute of the image
 
-  Input parameters:
-  - file: the src attribute of the image
-  - alt: the alt attribute of the image
-
-  Related documentation:
-  - https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types
-  - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture
-  - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source
-  - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img
-
+Related documentation: 
+- https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types 
+- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture 
+- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source 
+- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img 
+        
 {% endcomment %}
 
 {% assign assetsFolder = 'assets/thumbnails-wide/' %}
 
-<picture>
+  <picture>
   {% assign imagePath = assetsFolder | append: include.file %}
-  
+
   {% comment %} AVIF {% endcomment %}
 
   <source
     media="(max-width: 960px)"
-    srcset="{{ imagePath | avif: "240x135"  }}"
+    srcset="{{ imagePath | avif: "240x135" | relative_url }}"
     width="240"
     height="135"
-    type="image/avif"
-  >
+    type="image/avif"/>
+
   <source
     media="(max-width: 1920px)"
-    srcset="{{ imagePath | avif: "480x270"  }}"
+    srcset="{{ imagePath | avif: "480x270" | relative_url }}"
     type="image/avif"
     width="480"
-    height="270"
-  >
+    height="270"/>
+
   <source
     media="(max-width: 2560px)"
-    srcset="{{ imagePath | avif: "960x540" }}"
+    srcset="{{ imagePath | avif: "960x540" | relative_url }}"
     type="image/avif"
     width="960"
-    height="540"
-  >
+    height="540"/>
+
     {% comment %} WEBP {% endcomment %}
 
   <source
     media="(max-width: 960px)"
-    srcset="{{ imagePath | webp: "240x135"   }}"
+    srcset="{{ imagePath | webp: "240x135" | relative_url }}"
     type="image/webp"
     width="240"
-    height="135"
-  >
+    height="135"/>
+
   <source
     media="(max-width: 1920px)"
-    srcset="{{ imagePath | webp: "480x270"  }}"
+    srcset="{{ imagePath | webp: "480x270" | relative_url  }}"
     type="image/webp"
     width="480"
-    height="270"
-  >
+    height="270"/>
+
   <source
     media="(max-width: 2560px)"
-    srcset="{{ imagePath | webp: "960x540" }}"
+    srcset="{{ imagePath | webp: "960x540" | relative_url }}"
     type="image/webp"
     width="960"
-    height="540"
-  >
+    height="540"/>
 
     {% comment %} JPG {% endcomment %}
 
-    <source
+  <source
     media="(max-width: 960px)"
-    srcset="{{ imagePath | jpg: "240x135"  }}"
+    srcset="{{ imagePath | jpg: "240x135" | relative_url }}"
     type="image/jpeg"
     width="240"
-    height="135"
-  >
+    height="135"/>
+
   <source
     media="(max-width: 1920px)"
-    srcset="{{ imagePath | jpg: "480x270"  }}"
+    srcset="{{ imagePath | jpg: "480x270" | relative_url }}"
     type="image/jpeg"
     width="480"
-    height="270"
-  >
+    height="270"/>
+
   <source
     media="(max-width: 2560px)"
-    srcset="{{ imagePath | jpg: "960x540" }}"
+    srcset="{{ imagePath | jpg: "960x540" | relative_url }}"
     type="image/jpeg"
     width="960"
-    height="540"
-  >
+    height="540"/>
 
-  <img class="banner-image" src="{{ imagePath | relative_url }}" alt="{{include.alt}}" width="1920" height="1080">
+  <img
+    class="banner-image"
+    src="{{ imagePath | relative_url }}"
+    alt="{{include.alt}}"
+    width="1920"
+    height="1080">
 </picture>
