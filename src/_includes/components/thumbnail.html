@@ -20,21 +20,14 @@ Related documentation:
   {% comment %} AVIF {% endcomment %}
 
   <source
-    media="(max-width: 960px)"
-    srcset="{{ imagePath | avif: "240x135" | relative_url }}"
-    type="image/avif"
-    width="240"
-    height="135"/>
-
-  <source
-    media="(max-width: 1920px)"
+    media="(max-width: 1023px)"
     srcset="{{ imagePath | avif: "480x270" | relative_url }}"
     type="image/avif"
     width="480"
     height="270"/>
 
   <source
-    media="(max-width: 2560px)"
+    media="(min-width: 1024px)"
     srcset="{{ imagePath | avif: "960x540" | relative_url }}"
     type="image/avif"
     width="960"
@@ -43,21 +36,14 @@ Related documentation:
   {% comment %} WEBP {% endcomment %}
 
   <source
-    media="(max-width: 960px)"
-    srcset="{{ imagePath | webp: "240x135" | relative_url }}"
-    type="image/webp"
-    width="240"
-    height="135"/>
-
-  <source
-    media="(max-width: 1920px)"
+    media="(max-width: 1023px)"
     srcset="{{ imagePath | webp: "480x270" | relative_url }}"
     type="image/webp"
     width="480"
     height="270"/>
 
   <source
-    media="(max-width: 2560px)"
+    media="(min-width: 1024px)"
     srcset="{{ imagePath | webp: "960x540" | relative_url }}"
     type="image/webp"
     width="960"
@@ -66,21 +52,14 @@ Related documentation:
   {% comment %} JPG {% endcomment %}
 
   <source
-    media="(max-width: 960px)"
-    srcset="{{ imagePath | jpg: "240x135"  | relative_url }}"
-    type="image/jpeg"
-    width="240"
-    height="135"/>
-
-  <source
-    media="(max-width: 1920px)"
+    media="(max-width: 1023px)"
     srcset="{{ imagePath | jpg: "480x270" | relative_url }}"
     type="image/jpeg"
     width="480"
     height="270"/>
 
   <source
-    media="(max-width: 2560px)"
+    media="(min-width: 1024px)"
     srcset="{{ imagePath | jpg: "960x540"  | relative_url }}"
     type="image/jpeg"
     width="960"

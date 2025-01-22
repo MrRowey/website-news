@@ -4,10 +4,13 @@
   display: flex;
   flex-direction: column;
   gap: 1em;
-  padding: 1em;
 
   grid-column: breakout-start / breakout-end;
   grid-row: 2/2;
+
+  @media (min-width: $on-medium) {
+    padding: 1em;
+  }
 }
 
 .post-small-item-container {
@@ -78,7 +81,13 @@
 
 .post-small-actions {
   display: flex;
+  justify-self: end;
+  flex-direction: row;
+
   padding: 1ch;
-  flex-direction: column;
   gap: 1em;
+
+  @media (min-width: $on-medium) {
+    flex-direction: column;
+  }
 }
