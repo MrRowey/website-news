@@ -32,6 +32,7 @@ permalink: /:year/:month/:day/:title:output_ext
 
 # Build settings
 theme: minima
+plugins_dir: _plugins
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -39,6 +40,7 @@ plugins:
   - jekyll-github-metadata
   - jekyll-category-pages
   - jekyll-transcode-image-filters
+  - jekyll-icalendar-feed
 
 # Settings for jekyll-category-pages
 # See also: https://github.com/field-theory/jekyll-category-pages
@@ -86,6 +88,11 @@ minima:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+icalendar_feed: 
+  categories: 
+    - tournament
+  
 
 # Minima date format.
 # The default value is "%b %d, %Y" (e.g. Nov 14, 2023)

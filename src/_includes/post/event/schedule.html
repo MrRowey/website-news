@@ -5,30 +5,30 @@
 
 {% assign date_format = site.date_format | default: '%b %-d, %Y' %}
 
-{%- if include.event.startsAt or include.event.endsAt -%}
+{%- if include.event.dtstart or include.event.dtend -%}
   <span>
 
-    {% assign startsAt = include.event.startsAt | date: date_format %}
-    {% assign endsAt = include.event.endsAt | date: date_format %}
+    {% assign dtstart = include.event.dtstart | date: date_format %}
+    {% assign dtend = include.event.dtend | date: date_format %}
 
     {% comment %}
       Only show one date if they're both the same.
     {% endcomment %}
 
-    {% if startsAt == endsAt %}
-      {{ startsAt }}
+    {% if dtstart == dtend %}
+      {{ dtstart }}
     {%- else -%}
 
-    {%- if include.event.startsAt -%}
-      {{ include.event.startsAt | date: date_format }}
+    {%- if include.event.dtstart -%}
+      {{ include.event.dtstart | date: date_format }}
     {%- endif -%}
 
-    {%- if include.event.startsAt and include.event.endsAt -%}
+    {%- if include.event.dtstart and include.event.dtend -%}
       <span> to </span>
     {%- endif -%}
 
-    {%- if include.event.endsAt -%}
-      {{ include.event.endsAt | date: date_format }}
+    {%- if include.event.dtend -%}
+      {{ include.event.dtend | date: date_format }}
     {%- endif -%}
 
     {% endif %}
