@@ -315,6 +315,7 @@ DEPENDENCIES
   jekyll-paginate
   jekyll-redirect-from (~> 0.16.0)
   jekyll-seo-tag (~> 2.1)
+  jekyll-sitemap
   jekyll-transcode-image-filters!
   tzinfo (>= 1, < 3)
   tzinfo-data

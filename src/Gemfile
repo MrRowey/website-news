@@ -45,6 +45,11 @@ group :jekyll_plugins do
 
   gem "jekyll-category-pages"
 
+  # Used to generate a sitemap that is useful for Search Engine Optimization (SEO).
+  # - https://github.com/jekyll/jekyll-sitemap
+
+  gem 'jekyll-sitemap'
+
   # Used to generate images of various sizes and formats to speed up page loading on mobile phones.
   # - https://github.com/Garanas/jekyll-transcode-image-filters
 

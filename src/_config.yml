@@ -41,6 +41,7 @@ plugins:
   - jekyll-category-pages
   - jekyll-transcode-image-filters
   - jekyll-icalendar-feed
+  - jekyll-sitemap
 
 # Settings for jekyll-category-pages
 # See also: https://github.com/field-theory/jekyll-category-pages
