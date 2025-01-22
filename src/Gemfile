@@ -1,16 +1,6 @@
 source "https://rubygems.org"
 
-# Quote from: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll
-# Jekyll is an active open source project that is updated frequently. If the github-pages gem
-# on your computer is out of date with the github-pages gem on the GitHub Pages server, 
-# your site may look different when built locally than when published on GitHub. 
-#
-# To avoid this, regularly update the github-pages gem on your computer.
-
-# Therefore all versions are fixed to match with the following website: 
-# - https://pages.github.com/versions/
-
-gem "github-pages", group: :jekyll_plugins
+gem "jekyll", ENV["JEKYLL_VERSION"] if ENV["JEKYLL_VERSION"]
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
@@ -18,22 +8,22 @@ group :jekyll_plugins do
   # Used to automatically generate the RRS feed
   # - https://github.com/jekyll/jekyll-feed
 
-  gem "jekyll-feed","~> 0.17.0"
+  gem "jekyll-feed"
 
   # Used to provide us with the capability to redirect users. 
   # - https://github.com/jekyll/jekyll-redirect-from
 
-  gem "jekyll-redirect-from", "~> 0.16.0"
+  gem "jekyll-redirect-from"
 
   # Used to expose metadata of the repository.
   # - https://github.com/jekyll/github-metadata
 
-  gem "jekyll-github-metadata", "~> 2.16.1"
+  gem "jekyll-github-metadata"
 
   # Used to generate (meta) tags for search engine optimization (SEO).
   # - https://github.com/jekyll/jekyll-seo-tag
   
-  gem "jekyll-seo-tag", "~> 2.1"
+  gem "jekyll-seo-tag"
 
   # Used to add support for pagination. Especially useful for the next plugin that generates a page for each category.
   # - https://github.com/jekyll/jekyll-paginate
