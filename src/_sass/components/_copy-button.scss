@@ -11,11 +11,11 @@
 }
 
 .copy-button {
-  background-color: #FFFFFF;
+  background-color: var(--minima-card-background-color);
   border: 0;
   border-radius: .5rem;
   box-sizing: border-box;
-  color: #111827;
+  color: var(--minima-link-base-color);
   font-size: .875rem;
   font-weight: 600;
   line-height: 1.25rem;
@@ -34,7 +34,7 @@
 
   &:hover {
     color: #007bff;
-    background-color: rgb(249,250,251);
+    background-color: var(--minima-background-color)
   }
 
   &:focus {
