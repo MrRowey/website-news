@@ -1,36 +1,12 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+#region Configuration of Jekyll
 
 title: News hub of FAForever
 email: promo@faforever.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-# baseurl: "" # the subpath of your site, e.g. /blog
-# url: "https://garanas.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-github_username: Garanas
+description: >-
+  Provides news about the community driven lobby for Supreme Commander: Forged Alliance Forever.
 
 permalink: /:year/:month/:day/:title:output_ext
 
-# Build settings
 plugins_dir: _plugins
 plugins:
   - jekyll-feed
@@ -42,41 +18,8 @@ plugins:
   - jekyll-icalendar-feed
   - jekyll-sitemap
 
-# Settings for jekyll-category-pages
-# See also: https://github.com/field-theory/jekyll-category-pages
-category_layout: category_index.html
-category_path: category
-
-# If you want to link only specific pages in your header, use this and add the path to the pages
-# in order as they should show up.
-header_pages:
-  - about.md
-
-feed:
-  path: /news/atom/index.xml
-
-# jekyll-github-metadata
-repository: Garanas/Newshub
-
-# Minima specific settings, which are only available from Minima 3.0 onward.
-minima:
-  # Minima skin selection.
-  # Available skins are:
-  # classic	           Default, light color scheme.
-  # dark	             Dark variant of the classic skin.
-  # auto	             Adaptive skin based on the default classic and dark skins.
-  # solarized-light	   Light variant of solarized color scheme.
-  # solarized-dark	   Dark variant of solarized color scheme.
-  # solarized	         Adaptive skin for solarized color scheme skins.
-  skin: classic
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
+# Excluded files and folders
+# Note that files that start with `_` are automatically excluded.
 exclude:
   - .sass-cache/
   - .idea/
@@ -91,12 +34,45 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+#endregion
 
-icalendar_feed: 
-  categories: 
+#region Configuration of site globals
+
+# If you want to link only specific pages in your header, use this and add the path to the pages
+# in order as they should show up.
+header_pages:
+  - about.md
+
+# Useful resources:
+# - https://shopify.github.io/liquid/filters/date/
+# - https://strftime.net/
+date_format: "%d %B, %Y"
+#endregion
+
+#region Configuration of jekyll-icalendar-feed
+# See also: https://github.com/Garanas/jekyll-icalendar-feed
+
+icalendar_feed:
+  categories:
     - tournament
-  
-# Minima date format.
-# The default value is "%b %d, %Y" (e.g. Nov 14, 2023)
-# Refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this.
-date_format: "%B-%d-%Y"
+#endregion
+
+#region  Configuration of: jekyll-github-metadata
+# See also: https://github.com/jekyll/github-metadata
+
+repository: Garanas/Newshub
+#endregion
+
+# Configuration of: jekyll-feed
+# See also: https://github.com/jekyll/jekyll-feed
+
+feed:
+  path: /news/atom/index.xml
+#endregion
+
+#region Configuration of: jekyll-category-pages
+# See also: https://github.com/field-theory/jekyll-category-pages
+
+category_layout: category_index.html
+category_path: category
+#endregion

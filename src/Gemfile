@@ -45,6 +45,9 @@ group :jekyll_plugins do
 
   gem 'jekyll-transcode-image-filters', git: "https://github.com/Garanas/jekyll-transcode-image-filters"
 
+  # Used to generate RFC5545 compatible feeds for calendars
+  # - https://github.com/Garanas/jekyll-icalendar-feed
+
   gem "jekyll-icalendar-feed", git: "https://github.com/Garanas/jekyll-icalendar-feed"
 end
 
