@@ -1,15 +1,15 @@
 .url-button {
   background-color: var(--minima-card-background-color);
   border: 0;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   box-sizing: border-box;
   color: var(--minima-link-base-color);
-  font-size: .875rem;
+  font-size: 0.875rem;
   font-weight: 600;
   line-height: 1.25rem;
-  padding: .50rem 0.75rem;
+  padding: 0.5rem 0.75rem;
   text-align: center;
-  text-decoration: none #D1D5DB solid;
+  text-decoration: none #d1d5db solid;
   text-decoration-thickness: auto;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   cursor: pointer;
@@ -19,7 +19,7 @@
 
   &:hover {
     color: #007bff;
-    background-color: var(--minima-background-color)
+    background-color: var(--minima-background-color);
   }
 
   &:focus {
@@ -30,7 +30,4 @@
   &:focus-visible {
     box-shadow: none;
   }
-
-  
-
 }

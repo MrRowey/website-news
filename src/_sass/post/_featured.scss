@@ -1,16 +1,15 @@
 .post-featured-container {
   display: flex;
-
 }
 
 .post-featured-item-container {
   display: grid;
 
   grid-template-rows: 1fr min-content;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1;
 
   @media (min-width: $on-medium) {
-    grid-template-rows: 1fr;
+    grid-template-rows: 1;
     grid-template-columns: 1fr 1fr;
   }
 }

@@ -16,7 +16,6 @@
   display: grid;
   grid-gap: 1em 0;
 
-
   /** Desktop layout */
   @media (min-width: $on-large) {
     // background-color: red;
@@ -37,5 +36,5 @@
 }
 
 .wrapper-body {
-    padding: 1em;
+  padding: 1em;
 }

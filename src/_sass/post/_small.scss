@@ -15,12 +15,12 @@
 
 .post-small-item-container {
   display: grid;
-  grid-template-rows: 1fr;
+  grid-template-rows: 1;
   grid-template-columns: 1fr 4fr min-content;
 
   @media screen and (max-width: $on-medium) {
     grid-template-rows: 200px 1fr min-content;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1;
   }
 }
 
