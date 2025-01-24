@@ -76,7 +76,10 @@ jobs:
           npm install --clean
 
           # Minify assets to reduce bundle size
-          npm run minify
+          npm run purge-css
+          npm run minify-css
+          npm run minify-js
+          npm run minify-html
 
           # Turn the website into a PWA
           npm run workbox-generate
