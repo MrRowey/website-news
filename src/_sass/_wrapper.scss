@@ -19,19 +19,19 @@
   /** Desktop layout */
   @media (min-width: $on-large) {
     // background-color: red;
-    grid-template-columns: 1fr [breakout-start] 200px [content-start] 4fr [content-end] 200px [breakout-end] 1fr;
+    grid-template-columns: [page-start] 1fr [breakout-start] 200px [content-start] 4fr [content-end] 200px [breakout-end] 1fr [page-end];
   }
 
   /** Tablet layout */
   @media (min-width: $on-medium) and (max-width: $on-large) {
     // background-color: blue;
-    grid-template-columns: [breakout-start] 200px [content-start] 4fr [content-end] 200px [breakout-end];
+    grid-template-columns: [page-start] [breakout-start] 200px [content-start] 4fr [content-end] 200px [breakout-end] [page-end];
   }
 
   /** Phone layout */
   @media (max-width: $on-medium) {
     // background-color: green;
-    grid-template-columns: [breakout-start] [content-start] 1fr [content-end] [breakout-end];
+    grid-template-columns: [page-start] [breakout-start] [content-start] 1fr [content-end] [breakout-end] [page-end];
   }
 }
 

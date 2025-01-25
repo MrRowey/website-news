@@ -5,7 +5,6 @@
 
 {% assign path = 'assets/thumbnails-wide/' %}
 
-<div class="post-small-item-container post-card">
   <div class="post-small-image-container">
     {% assign thumbnail = include.post.thumbnails | first  %}
     {% include components/thumbnail.html file=thumbnail.file alt=thumbnail.alt %}
@@ -35,4 +34,3 @@
       {% include components/url-button.html href=include.post.redirectURL %}
     </div>
   </div>
-</div>
