@@ -38,7 +38,7 @@
   }
 
   &:focus {
-    outline: 2px solid transparent;
+    outline: 2px solid var(--minima-border-color-02);
     outline-offset: 2px;
   }
 

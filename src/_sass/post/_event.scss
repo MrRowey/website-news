@@ -1,6 +1,10 @@
 .post-event-container {
   display: flex;
   height: min-content;
+
+  &:focus-within {
+    border: 1px solid var(--minima-border-color-02);
+  }
 }
 
 .post-event-list {

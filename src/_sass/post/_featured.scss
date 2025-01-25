@@ -12,6 +12,10 @@
     grid-template-rows: 1;
     grid-template-columns: 1fr 1fr;
   }
+
+  &:focus-within {
+    border: 1px solid var(--minima-border-color-02);
+  }
 }
 
 .post-featured-text-container {
