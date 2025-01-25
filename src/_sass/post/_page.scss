@@ -1,4 +1,6 @@
 .post-page-container {
+  grid-column: content-start / content-end;
+  
   margin: 0;
   list-style: none;
   display: flex;
