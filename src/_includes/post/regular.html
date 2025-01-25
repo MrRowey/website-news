@@ -24,7 +24,7 @@
     {% endcomment %}
 
     <span class="post-regular-excerpt">
-      {{ include.post.excerpt | truncate: 400 }}
+      {{ include.post.excerpt | strip_html | truncate: 400 }}
     </span>
   </div>
 </a>

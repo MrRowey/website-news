@@ -18,17 +18,21 @@
   </div>
 
   <div class="post-small-text-container">
-    <h3 class="post-small-header">{{ include.post.title | escape }}</h3>
+    <div class="post-small-text-body-container">
+      <h3 class="post-small-header">{{ include.post.title | escape }}</h3>
 
-    {% comment %}
-      We can only support so many characters in the overview, therefore we truncate it.
-    {% endcomment %}
+      {% comment %}
+        We can only support so many characters in the overview, therefore we truncate it.
+      {% endcomment %}
 
-    <span class="post-small-excerpt"> {{ include.post.excerpt | truncate: 300 }} </span>
-  </div>
+      <p class="post-small-excerpt"> 
+        {{ include.post.excerpt | strip_html | truncate: 600 }} 
+      </p>
+    </div>
 
-  <div class="post-small-actions">
-    {% include components/copy-button.html data=include.post.redirectURL %}
-    {% include components/url-button.html href=include.post.redirectURL %}
+    <div class="post-small-actions">
+      {% include components/copy-button.html data=include.post.redirectURL %}
+      {% include components/url-button.html href=include.post.redirectURL %}
+    </div>
   </div>
 </div>

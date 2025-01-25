@@ -24,7 +24,7 @@
     {% endcomment %}
 
     <span class="post-featured-excerpt">
-      {{ include.post.excerpt | truncate: 600 }}
+      {{ include.post.excerpt | strip_html | truncate: 600 }}
     </span>
 
     <div class="post-featured-actions">

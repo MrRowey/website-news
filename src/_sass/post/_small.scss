@@ -1,4 +1,4 @@
-.post-small-container {
+.post-small-item-list-container {
   margin: 0;
   list-style: none;
   display: flex;
@@ -14,58 +14,42 @@
 }
 
 .post-small-item-container {
-  display: grid;
-  grid-template-rows: 1;
-  grid-template-columns: 1fr 4fr min-content;
-
-  @media screen and (max-width: $on-medium) {
-    grid-template-rows: 200px 1fr min-content;
-    grid-template-columns: 1;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
 }
 
 .post-small-text-container {
-  display: block;
+  display: flex;
+  flex-direction: row;
+
   padding: 1em;
+
+  flex-grow: 2;
+  flex-shrink: 1;
+  flex-basis: 400px;
+}
+
+.post-small-text-body-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem 1rem;
 }
 
 .post-small-header {
+  margin: 0
+}
+
+.post-small-excerpt {
+  margin: 0
 }
 
 .post-small-image-container {
   position: relative;
-  width: 100%;
-  overflow: hidden;
-}
 
-.post-small-picture {
-  overflow: hidden;
-  /* Ensures excess image content is clipped */
-  display: flex;
-  justify-content: center;
-  /* Center the image horizontally */
-  align-items: center;
-  /* Center the image vertically */
-
-  object-fit: cover;
-  object-position: center;
-
-  aspect-ratio: 1/1;
-  width: 100%;
-
-  @media screen and (max-width: $on-medium) {
-    aspect-ratio: 16 / 9;
-  }
-}
-
-.post-small-image {
-  border-radius: 5px;
-
-  height: 100%;
-  width: auto;
-
-  object-fit: cover;
-  object-position: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 400px;
 }
 
 .post-small-meta {
@@ -82,12 +66,8 @@
 .post-small-actions {
   display: flex;
   justify-self: end;
-  flex-direction: row;
+  flex-direction: column;
 
   padding: 1ch;
   gap: 1em;
-
-  @media (min-width: $on-medium) {
-    flex-direction: column;
-  }
 }
