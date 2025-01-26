@@ -25,14 +25,16 @@
   /** Tablet layout */
   @media (min-width: $on-medium) and (max-width: $on-large) {
     // background-color: blue;
-    grid-template-columns: [page-start] [breakout-start] 200px [content-start] 4fr [content-end] 200px [breakout-end] [page-end];
+    grid-template-columns: [page-start] 0px [breakout-start] 200px [content-start] 4fr [content-end] 200px [breakout-end] 0px [page-end];
   }
 
   /** Phone layout */
   @media (max-width: $on-medium) {
     // background-color: green;
-    grid-template-columns: [page-start] [breakout-start] [content-start] 1fr [content-end] [breakout-end] [page-end];
+    grid-template-columns: [page-start] 0px [breakout-start] 0px [content-start] 1fr [content-end] 0px [breakout-end] 0px [page-end];
   }
+
+
 }
 
 .wrapper-body {
