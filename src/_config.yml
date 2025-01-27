@@ -1,8 +1,8 @@
 #region Configuration of Jekyll
 
-title: News hub of FAForever
+title: News of FAForever
 email: promo@faforever.com
-url: https://garanas.github.io
+url: https://faforever.github.io
 description: >-
   Provides news about the community driven lobby for Supreme Commander: Forged Alliance Forever.
 
@@ -61,7 +61,7 @@ icalendar_feed:
 #region  Configuration of: jekyll-github-metadata
 # See also: https://github.com/jekyll/github-metadata
 
-repository: Garanas/Newshub
+repository: FAForever/website-news
 #endregion
 
 # Configuration of: jekyll-feed
