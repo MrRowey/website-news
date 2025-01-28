@@ -45,7 +45,7 @@ jobs:
         uses: actions/cache/restore@v4
         with:
           path: src/cache
-          key: cache-images-${{ hashFiles('src/assets/**') }}
+          key: cache-images-${{ hashFiles('src/assets/images/**') }}
 
       - name: Build with Jekyll
         if: ${{ inputs.baseurl != '' }}

@@ -6,16 +6,15 @@ categories: tournament
 type: regular
 status: live
 priority: 600
-
 redirectURL: https://forum.faforever.com/category/1/announcements
+
+image:
+    path: assets/images/2025/remainders.png
+    alt: The wreckages of a UEF base after a siege by the Aeon faction.
 
 event:
     dtstart: 2025-01-05 10:00:00 +0100
     dtend: 2025-01-05 22:00:00 +0100
-
-thumbnails: 
-    - file: remainders.png
-      alt: The wreckages of a UEF base after a siege by the Aeon faction.
 ---
 
 Lorem ipsum odor amet, consectetuer adipiscing elit. Ornare nunc vel in fringilla nostra diam ultricies luctus. Tempor scelerisque ipsum blandit ultrices neque eros maecenas! Ridiculus accumsan mauris ut nostra taciti. Curae elementum per porta urna nunc tortor. Malesuada aptent euismod vivamus facilisis interdum ridiculus netus scelerisque. Phasellus libero augue feugiat laoreet dis nostra facilisis sollicitudin malesuada. Sagittis lacinia dui ultrices litora; aliquam hendrerit viverra fringilla. Dictumst vitae bibendum ante magnis diam nibh. Libero platea nulla accumsan torquent nullam torquent in aliquam senectus.

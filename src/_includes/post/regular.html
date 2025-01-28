@@ -3,12 +3,9 @@
   - post: an instance of a post
 {% endcomment %}
 
-{% assign path = 'assets/thumbnails-wide/' %}
-
 <a class="post-regular-item-container  post-card" href="{{ include.post.url | relative_url }}">
   <div class="post-regular-image-container">
-    {% assign thumbnail = include.post.thumbnails | first  %}
-    {% include components/thumbnail.html file=thumbnail.file alt=thumbnail.alt %}
+    {% include components/thumbnail.html path=include.post.path alt=include.post.alt %}
 
     {%- if include.post.event -%}
       <span class="post-regular-meta">

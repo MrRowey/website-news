@@ -9,13 +9,13 @@ priority: 600
 
 redirectURL: https://forum.faforever.com/category/1/announcements
 
+image:
+    path: assets/images/2025/uef-base.png
+    alt: A UEF base right before a strategic missile explodes.
+
 event:
     dtstart: 2025-01-12 09:00:00 +0100
     dtend: 2025-01-12 16:00:00 +0100
-
-thumbnails: 
-    - file: uef-base.png
-      alt: A UEF base right before a strategic missile explodes.
 ---
 
 Lorem ipsum odor amet, consectetuer adipiscing elit. Conubia facilisi eleifend sodales ornare, quisque ad. Tincidunt montes vestibulum ad mi senectus suspendisse platea. Vehicula lorem class netus gravida tempor enim orci penatibus vulputate. Integer lacinia libero pharetra adipiscing elit platea condimentum? Etiam fusce enim torquent natoque magnis. At taciti himenaeos massa cursus ullamcorper lacus rhoncus. Mollis condimentum nam viverra fermentum nec.

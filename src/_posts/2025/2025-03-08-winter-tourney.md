@@ -14,9 +14,9 @@ event:
     dtstart: 2025-03-08 12:00:00 +0100
     dtend: 2025-03-08 23:00:00 +0100
 
-thumbnails: 
-    - file: remainders.png
-      alt: A siege of Cybran amphibious units against a Seraphim base.
+image:
+    path: assets/images/2025/tournament-event-01-2024.png
+    alt: A siege of Cybran amphibious units against a Seraphim base.
 ---
 
 Lorem ipsum odor amet, consectetuer adipiscing elit. Dignissim nisl commodo mus penatibus venenatis sed habitasse aptent litora! Vulputate semper curae quisque inceptos, morbi pharetra maximus sem. Senectus nam facilisi vestibulum; consectetur ornare sociosqu. Maximus malesuada hac ac litora finibus auctor ultrices vel. Tempor dolor duis per netus habitasse. Arcu curabitur rutrum convallis malesuada morbi ornare et. Porta morbi curabitur molestie, litora dictumst montes.

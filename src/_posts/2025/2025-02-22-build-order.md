@@ -10,9 +10,9 @@ priority: 700
 
 redirectURL: https://forum.faforever.com/category/1/announcements
 
-thumbnails: 
-    - file: tournament-event-01-2024.png
-      alt: A siege of Cybran amphibious units against a Seraphim base.
+image:
+    path: assets/images/2025/tournament-event-01-2024.png
+    alt: A siege of Cybran amphibious units against a Seraphim base.
 ---
 
 Build orders are crucial to getting your economy off to a healthy start, learn the best practices when starting a game with TheGreenSquier!

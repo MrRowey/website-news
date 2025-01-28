@@ -1,7 +1,7 @@
 {% comment %} 
  
 Input parameters: 
-- file: the src attribute of the image 
+- path: the src attribute of the image 
 - alt: the alt attribute of the image
 
 Related documentation: 
@@ -12,23 +12,20 @@ Related documentation:
 
 {% endcomment %}
 
-{% assign assetsFolder = 'assets/thumbnails-wide/' %}
-
-  <picture>
-  {% assign imagePath = assetsFolder | append: include.file %}
+<picture>
 
   {% comment %} AVIF {% endcomment %}
 
   <source
     media="(max-width: 1023px)"
-    srcset="{{ imagePath | avif: "480x270" | relative_url }}"
+    srcset="{{ include.path | avif: "480x270" | relative_url }}"
     type="image/avif"
     width="480"
     height="270"/>
 
   <source
     media="(min-width: 1024px)"
-    srcset="{{ imagePath | avif: "960x540" | relative_url }}"
+    srcset="{{ include.path | avif: "960x540" | relative_url }}"
     type="image/avif"
     width="960"
     height="540"/>
@@ -37,14 +34,14 @@ Related documentation:
 
   <source
     media="(max-width: 1023px)"
-    srcset="{{ imagePath | webp: "480x270" | relative_url }}"
+    srcset="{{ include.path | webp: "480x270" | relative_url }}"
     type="image/webp"
     width="480"
     height="270"/>
 
   <source
     media="(min-width: 1024px)"
-    srcset="{{ imagePath | webp: "960x540" | relative_url }}"
+    srcset="{{ include.path | webp: "960x540" | relative_url }}"
     type="image/webp"
     width="960"
     height="540"/>
@@ -53,21 +50,21 @@ Related documentation:
 
   <source
     media="(max-width: 1023px)"
-    srcset="{{ imagePath | jpg: "480x270" | relative_url }}"
+    srcset="{{ include.path | jpg: "480x270" | relative_url }}"
     type="image/jpeg"
     width="480"
     height="270"/>
 
   <source
     media="(min-width: 1024px)"
-    srcset="{{ imagePath | jpg: "960x540"  | relative_url }}"
+    srcset="{{ include.path | jpg: "960x540"  | relative_url }}"
     type="image/jpeg"
     width="960"
     height="540"/>
 
   <img
     class="thumbnail-image"
-    src="{{ imagePath | relative_url }}"
+    src="{{ include.path | relative_url }}"
     alt="{{include.alt}}"
     width="1920"
     height="1080">

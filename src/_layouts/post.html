@@ -9,7 +9,6 @@ layout: base
   Note that the front matter in posts extend the post object!
 {% endcomment %}
 
-{% assign path = 'assets/thumbnails-wide/' %}
 {% assign date_format = site.date_format | default: '%b %-d, %Y' %}
 
 <section class="wrapper">
@@ -30,8 +29,7 @@ layout: base
     </header>
 
     <div class="post-page-image-container">
-      {% assign thumbnail = page.thumbnails | first  %}
-      {% include components/banner.html file=thumbnail.file alt=thumbnail.alt %}
+      {% include components/banner.html path=page.image.path alt=page.image.alt %}
 
       {%- if page.event -%}
         <span class="post-page-image-meta">

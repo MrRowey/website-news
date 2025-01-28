@@ -9,14 +9,14 @@ priority: 600
 
 redirectURL: https://forum.faforever.com/category/1/announcements
 
+image:
+    path: assets/images/2025/uef-sacu-fight.png
+    alt: A couple of UEF SACUs in the heat of battle.
+
 event:
     dtstart: 2025-01-26 12:00:00 +0100
     dtend: 2025-01-26 17:00:00 +0100
     image: https://images.cgames.de/images/gamestar/4/supreme-commander-forged-alliance-11_1511223.jpg
-
-thumbnails: 
-    - file: uef-sacu-fight.png
-      alt: A couple of UEF SACUs in the heat of battle.
 ---
 
 Lorem ipsum odor amet, consectetuer adipiscing elit. Mauris curabitur nullam penatibus in torquent, amet feugiat mattis sapien! Eu eros praesent ad interdum est nisi fringilla tristique. Molestie dapibus laoreet ridiculus erat cubilia imperdiet. Ex neque maximus; sapien mus varius natoque. Vitae integer montes sagittis condimentum augue aptent. Nascetur ligula praesent mus himenaeos laoreet nisi quis laoreet. Vehicula sed consectetur accumsan taciti feugiat eros vulputate varius tincidunt.
