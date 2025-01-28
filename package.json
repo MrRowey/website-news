@@ -1,10 +1,8 @@
 {
   "name": "faforever-newshub",
   "version": "1.0.0",
+  "private": true,
   "scripts": {
-    "bundle-install": "cd src && bundle install",
-    "build": "cd src && bundle exec jekyll build && npm run workbox-generate",
-    "serve": "cd src && bundle exec jekyll serve",
     "workbox-wizard": "workbox wizard",
     "workbox-generate": "workbox generateSW config/workbox-config.js",
     "minify-html": "node scripts/minify-html.js",
