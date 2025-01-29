@@ -8,7 +8,7 @@ description: >-
 
 permalink: /:year/:month/:day/:title:output_ext
 
-baseurl: /
+baseurl: ""
 
 plugins_dir: _plugins
 plugins:
