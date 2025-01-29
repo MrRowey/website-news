@@ -8,6 +8,8 @@ description: >-
 
 permalink: /:year/:month/:day/:title:output_ext
 
+baseurl: /
+
 plugins_dir: _plugins
 plugins:
   - jekyll-feed
