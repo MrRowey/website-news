@@ -1,26 +1,60 @@
 <head>
   <meta http-equiv="Cache-Control" content="max-age=604800">
 
-  <link rel="icon" type="image/png" href="{{ "/assets/favicons/favicon-96x96.png" | relative_url }}" sizes="96x96">
-  <link rel="icon" type="image/svg+xml" href="{{ "/assets/favicons/favicon.svg" | relative_url }}">
+  <link
+    rel="icon"
+    type="image/png"
+    href="{{ "/assets/favicons/favicon-96x96.png" | relative_url }}"
+    sizes="96x96">
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="{{ "/assets/favicons/favicon.svg" | relative_url }}">
   <link rel="shortcut icon" href="{{ "/assets/favicons/favicon.ico" | relative_url }}">
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ "/assets/favicons/apple-touch-icon.png" | relative_url }}">
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="{{ "/assets/favicons/apple-touch-icon.png" | relative_url }}">
+
   <meta name="apple-mobile-web-app-title" content="News of FAForever">
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {%- seo -%}
+
   <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+
+  {%- seo -%}
+
   {%- feed_meta -%}
-  {%- if jekyll.environment == 'production' and site.google_analytics -%}
-    {%- include google-analytics.html -%}
+
+  {%- if jekyll.environment == 'production' -%}
+
+    {% comment %} 
+      Progressive Web App (PWA) / Service worker support 
+
+      The required files are generated in the continuous integration pipeline.
+    {% endcomment %}
+
+    <link rel="manifest" href="{{ "/manifest.json" | relative_url }}">
+    <script
+      defer
+      type="text/javascript"
+      src="{{ "/assets/js/main.js" | relative_url }}"></script>
+
+    {% comment %} Analytics {% endcomment %}
+     
+    <script
+      defer
+      data-domain="news.faforever.com"
+      src="https://plausible.io/js/script.js"
+      integrity="sha384-jn/OD2re1VJp4Gz/A7sIc3mZNiIRHe0K7kTF6yWV2Qr97yqYuy7OHGFGKIKoQi/I"
+      crossorigin="anonymous"></script>
   {%- endif -%}
 
-  <link rel="manifest" href="{{ "/manifest.json" | relative_url }}">
 
-  <script defer data-domain="news.faforever.com" src="https://plausible.io/js/script.js" integrity="sha384-jn/OD2re1VJp4Gz/A7sIc3mZNiIRHe0K7kTF6yWV2Qr97yqYuy7OHGFGKIKoQi/I" crossorigin="anonymous"></script>
-  <script defer type="text/javascript" src="{{ "/assets/js/main.js" | relative_url }}"></script>
-  <script defer type="text/javascript" src="{{ "/assets/js/copy-to-clipboard.js" | relative_url }}"></script>
-
+  <script
+    defer
+    type="text/javascript"
+    src="{{ "/assets/js/copy-to-clipboard.js" | relative_url }}"></script>
 </head>
