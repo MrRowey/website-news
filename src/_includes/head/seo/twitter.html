@@ -8,6 +8,8 @@ References:
 
 {% assign title = page.title | default: site.title %}
 {% assign description = page.excerpt | default: site.description | strip_html %}
+
+{% comment %} TODO: for Twitter cards the images should always be a square. {% endcomment %}
 {% assign image = page.image.path | default: "assets/images/default/default-card-image.png" | webp: "960x540"  | absolute_url %}
 {% assign image_alt = page.image.alt | default: "TODO: some alternative description of the default image" %}
 
