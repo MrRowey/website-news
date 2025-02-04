@@ -22,11 +22,6 @@ group :jekyll_plugins do
 
   # Used to generate (meta) tags for search engine optimization (SEO).
   # - https://github.com/jekyll/jekyll-seo-tag
-  
-  gem "jekyll-seo-tag"
-
-  # Used to add support for pagination. Especially useful for the next plugin that generates a page for each category.
-  # - https://github.com/jekyll/jekyll-paginate
 
   gem "jekyll-paginate"
 
