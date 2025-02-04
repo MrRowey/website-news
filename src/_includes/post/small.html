@@ -7,7 +7,7 @@
   {% include components/thumbnail.html path=include.post.image.path alt=include.post.image.alt %}
 
   {%- if include.post.event -%}
-    <span class="post-regular-meta">
+    <span class="post-small-meta">
       {% include post/event/schedule.html event=include.post.event %}
     </span>
   {%- endif -%}

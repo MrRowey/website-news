@@ -44,5 +44,5 @@ $on-large: $on-laptop !default;
 
 @import // Hook to override predefined variables.
   "normalize",
-  "base", "header", "footer", "wrapper", "layout", "icomoon", "post/regular", "post/featured", "post/small", "post/event", "post/page", "post/common",
+  "base", "header", "footer", "wrapper", "layout", "icomoon", "post/featured", "post/small", "post/event", "post/page", "post/common",
   "components/copy-button", "components/url-button", "components/brand", "components/divider", "components/banner", "components/thumbnail", "components/socials";

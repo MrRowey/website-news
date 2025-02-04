@@ -5,21 +5,17 @@
   margin: 0;
   list-style: none;
 
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 1em;
 
-  @media (min-width: $on-medium) {
-    padding: 1em;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 1rem;
+
+  gap: 1em;
 }
 
 .post-small-item-container {
-  flex-grow: 1;
-  flex-shrink: 1;
-
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   align-content: flex-start;
   gap: 0.5rem 1rem;
@@ -30,18 +26,18 @@
 }
 
 .post-small-text-container {
+  flex-grow: 3;
+
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  flex-direction: column;
 
   padding: 1em;
-
-  flex-grow: 3;
-  flex-shrink: 1;
-  flex-basis: 400px;
 }
 
 .post-small-text-body-container {
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   gap: 0.5rem 1rem;
 }
@@ -57,15 +53,10 @@
 .post-small-image-container {
   position: relative;
 
-  flex-grow: 1;
-  flex-shrink: 1;
+  max-height: 200px;
   flex-basis: 400px;
 
-  // Keep the images of a given row the same size
-  display: flex; 
-  justify-content: center; 
-  align-items: start; 
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .post-small-meta {
@@ -81,8 +72,7 @@
 
 .post-small-actions {
   display: flex;
-  justify-self: end;
-  flex-direction: column;
+  justify-content: end;
 
   padding: 1ch;
   gap: 1em;
