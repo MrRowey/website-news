@@ -28,6 +28,10 @@
 /* When updating, override the following section and leave everything else   */
 /* intact!                                                                   */
 
+.icon-instagram:before {
+  content: "\e906";
+  color: #e4405f;
+}
 .icon-github:before {
   content: "\e905";
 }
@@ -67,6 +71,9 @@
 }
 .icon-embed2:before {
   content: "\ea80";
+}
+.icon-share2:before {
+  content: "\ea82";
 }
 .icon-deviantart:before {
   content: "\eaaa";

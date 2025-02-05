@@ -27,7 +27,7 @@
   </div>
 
   <div class="post-small-actions">
-    {% include components/copy-button.html data=include.post.redirectURL %}
+    {% include components/copy-button.html title=include.post.title description=include.post.excerpt url=include.post.url %}
     {% include components/url-button.html href=include.post.redirectURL %}
   </div>
 </div>

@@ -13,27 +13,7 @@
   "display": "standalone",
   "scope": "{{ site.baseurl }}/",
   "start_url": "{{ site.baseurl }}/",
-  "description": "Newshub for FAForever ",
-  "screenshots" : [
-    {
-      "src": "assets/images/pwa/screenshots/pwa-screenshot-colossus-2560x1440.webp",
-      "sizes": "2560x1440",
-      "type": "image/webp",
-      "platform": "wide",
-    },
-    {
-      "src": "assets/images/pwa/screenshots/pwa-screenshot-uef-base-1920x1080.webp",
-      "sizes": "1920x1080",
-      "type": "image/webp",
-      "platform": "wide",
-    },
-    {
-      "src": "assets/images/pwa/screenshots/pwa-screenshot-uef-base-960x540.webp",
-      "sizes": "960x540",
-      "type": "image/webp",
-      "platform": "wide",
-    }
-  ],
+  "description": "News of FAForever ",
   "icons": [
     {
       "src": "{{ '/assets/icons/windows11/SmallTile.scale-100.png' | relative_url }} ",

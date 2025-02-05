@@ -26,7 +26,8 @@
     </span>
 
     <div class="post-featured-actions">
-      {% include components/copy-button.html data=include.post.redirectURL %}
+      {% assign absolute_url_post = include.post.url | absolute_url %}
+      {% include components/copy-button.html title=include.post.title description=include.post.excerpt url=absolute_url_post %}
       {% include components/url-button.html href=include.post.redirectURL %}
     </div>
   </div>
