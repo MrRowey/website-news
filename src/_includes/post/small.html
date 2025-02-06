@@ -4,13 +4,23 @@
 {% endcomment %}
 
 <div class="post-small-image-container">
-  {% include components/thumbnail.html path=include.post.image.path alt=include.post.image.alt %}
+  <div class="post-small-image-picture">
+    {% include components/thumbnail.html path=include.post.image.path alt=include.post.image.alt %}
+  </div>
 
-  {%- if include.post.event -%}
-    <span class="post-small-meta">
-      {% include post/event/schedule.html event=include.post.event %}
+
+    <span class="post-small-image-meta">
+      <div class="post-small-image-meta-schedule">
+        {%- if include.post.event -%}
+          {% include post/event/schedule.html event=include.post.event %}
+        {%- endif -%}
+      </div>
+
+      <div class="post-small-image-meta-actions">
+        {% include components/copy-button.html title=include.post.title description=include.post.excerpt url=include.post.url %}
+      </div>
     </span>
-  {%- endif -%}
+
 </div>
 
 <div class="post-small-text-container">
@@ -27,7 +37,7 @@
   </div>
 
   <div class="post-small-actions">
-    {% include components/copy-button.html title=include.post.title description=include.post.excerpt url=include.post.url %}
+
     {% include components/url-button.html href=include.post.redirectURL %}
   </div>
 </div>
