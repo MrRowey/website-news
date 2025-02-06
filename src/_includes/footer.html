@@ -1,52 +1,135 @@
 <footer class="wrapper site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+  {% comment %} <div class="footer-navigation">
+    <div class="footer-navigation-container">
+      
+      <h3 class="footer-navigation-header">New players</h3>
+      <ul class="footer-navigation-list">
+        <li class="footer-navigation-list-item">
+          <a class="footer-navigation-list-item-link" href="https://faforever.com/play" target="_blank">
+            <span class="footer-navigation-list-item-link-icon icon-play2"></span>
+            <span class="footer-navigation-list-item-link-text">
+            Play
+            </span>
+          </a>
+        </li>
+        <li class="footer-navigation-list-item">
+          <a  class="footer-navigation-list-item-link" href="https://wiki.faforever.com/" target="_blank">
+            <span class="footer-navigation-list-item-link-icon icon-book"></span>
+            <span class="footer-navigation-list-item-link-text">
+              Wiki
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
 
-  <div class="footer-navigation">
-    <div>
-      <h3>Archive</h3>
-      <ul>
+
+    <div class="footer-navigation-container">
+      <h3 class="footer-navigation-header">Archive</h3>
+      <ul class="footer-navigation-list">
         {% for category in site.categories %}
           {% assign slugified = category | first | slugify %}
           {% assign path = '/category/' %}
-          <li>
+          <li class="footer-navigation-list-item">
             <a href="{{ '/category/' | append:slugified | append: /index.html | relative_url}}">
-              {{- category | first -}}
+              {{- category | first | capitalize -}}
             </a>
           </li>
         {% endfor %}
       </ul>
     </div>
 
-    <div>
-      <h3>Community</h3>
-      <ul>
-        {% for category in site.categories %}
-          {% assign slugified = category | first | slugify %}
-          {% assign path = '/category/' %}
-          <li>
-            <a href="{{ '/category/' | append:slugified | append: /index.html | relative_url}}">
-              {{- category | first -}}
-            </a>
-          </li>
-        {% endfor %}
+
+    <div class="footer-navigation-container">
+      <h3 class="footer-navigation-header">Collections</h3>
+      <ul class="footer-navigation-list">
+        <li class="footer-navigation-list-item">
+          <a  class="footer-navigation-list-item-link" href="" target="_blank">
+          <span class="footer-navigation-list-item-link-icon icon-map2"></span>
+          <span class="footer-navigation-list-item-link-text">
+            Maps
+          </span>
+        </a>
+        </li>
+        <li class="footer-navigation-list-item">
+          <a  class="footer-navigation-list-item-link" href="" target="_blank">
+            <span class="footer-navigation-list-item-link-icon icon-deviantart"></span>
+            <span class="footer-navigation-list-item-link-text">
+              Mods
+            </span>
+          </a>
+        </li>
+        <li class="footer-navigation-list-item">
+          <a  class="footer-navigation-list-item-link" href="" target="_blank">
+            <span class="footer-navigation-list-item-link-icon icon-pacman"></span>
+            <span class="footer-navigation-list-item-link-text">
+              Campaign
+            </span>
+          </a>
+        </li>
+        <li class="footer-navigation-list-item">
+          <a  class="footer-navigation-list-item-link" href="" target="_blank">
+            <span class="footer-navigation-list-item-link-icon icon-pacman"></span>
+            <span class="footer-navigation-list-item-link-text">
+              AIs
+            </span>
+          </a>
+        </li>
       </ul>
     </div>
 
-    <div>
-      <h3>Contributing</h3>
-      <ul>
-        {% for category in site.categories %}
-          {% assign slugified = category | first | slugify %}
-          {% assign path = '/category/' %}
-          <li>
-            <a href="{{ '/category/' | append:slugified | append: /index.html | relative_url}}">
-              {{- category | first -}}
-            </a>
-          </li>
-        {% endfor %}
+    <div class="footer-navigation-container">
+      <h3 class="footer-navigation-header">Community</h3>
+      <ul class="footer-navigation-list">
+        <li class="footer-navigation-list-item">
+          <a href="" target="_blank">
+            Client
+          </a>
+        </li>
+        <li class="footer-navigation-list-item">
+          <a href="" target="_blank">
+            Mods
+          </a>
+        </li>
+        <li class="footer-navigation-list-item">
+          <a href="" target="_blank">
+            Campaign
+          </a>
+        </li>
+        <li class="footer-navigation-list-item">
+          <a href="" target="_blank">
+            AIs
+          </a>
+        </li>
       </ul>
     </div>
-  </div>
+
+    <div class="footer-navigation-container">
+      <h3 class="footer-navigation-header">Contributing</h3>
+      <ul class="footer-navigation-list">
+        <li class="footer-navigation-list-item">
+          <a href="" target="_blank">
+            Maps
+          </a>
+        </li>
+        <li class="footer-navigation-list-item">
+          <a href="" target="_blank">
+            Mods
+          </a>
+        </li>
+        <li class="footer-navigation-list-item">
+          <a href="" target="_blank">
+            Campaign
+          </a>
+        </li>
+        <li class="footer-navigation-list-item">
+          <a href="" target="_blank">
+            AIs
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div> {% endcomment %}
 
   <div class="footer-links">
     {%- include components/brand.html -%}
