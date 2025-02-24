@@ -2,9 +2,9 @@
 FROM ruby:3.4.2-slim
 
 # Copy over the Gemfile that has all the required gems
-WORKDIR /temp
-COPY src/Gemfile /temp/Gemfile
-COPY src/Gemfile.lock /temp/Gemfile.lock
+WORKDIR /src
+COPY src/Gemfile /src/Gemfile
+COPY src/Gemfile.lock /src/Gemfile.lock
 
 # Set environment variables to avoid warnings and optimize bundler
 ENV BUNDLE_HOME=/usr/local/bundle
