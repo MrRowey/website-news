@@ -1,9 +1,13 @@
+@use "skins/auto" as skin;
+@use "mixins" as mixins;
+@use "variables" as variables;
+
 /**
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid $border-color-01;
-  padding: $spacing-unit 0;
+  border-top: 1px solid skin.$border-color-01;
+  padding: variables.$spacing-unit 0;
 }
 
 .footer-navigation {
