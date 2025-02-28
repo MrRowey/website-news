@@ -17,3 +17,4 @@ Throughout these pages we'll assume that the audience has little to no technical
 And various additional guidelines:
 
 - [Appendix - about images](/about/appendix-about-images)
+- [Appendix - about icons (through IcoMoon)](/about/appendix-about-images)
