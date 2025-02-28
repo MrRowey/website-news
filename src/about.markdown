@@ -1,17 +1,19 @@
 ---
 layout: page
-title: About
+title: About this website
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Welcome Commander!
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+On this page you will find everything you'll find useful to know when contributing towards the news website of FAForever. Whether you want to help with managing the news item or you are a developer that's interested in implementing a feature - you're at the right place!
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+Throughout these pages we'll assume that the audience has little to no technical knowledge. Regardless, we recommend developers to at least scan these pages.
 
-[jekyll-organization]: https://github.com/jekyll
+- [01 - Setup of a development environment](/about/01-setup)
+<!-- - [02 - Add a news item](/about/02-add-a-news-item) -->
+<!-- - [03 - Add a collections item](/about/03-add-a-collections-item) -->
+
+And various additional guidelines:
+
+- [Appendix - about images](/about/appendix-about-images)
