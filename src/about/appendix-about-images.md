@@ -31,3 +31,23 @@ In the digital battlefield, images serve as tactical assets, reinforcing news co
 
 - Copyright-Free: Only images with no copyright restrictions are permitted.
 - AI-Generated Images: Allowed, provided they align with thematic relevance and quality expectations.
+  
+## Technical references
+
+> You do not need to read this section to understand how images work. This section exists for developers to lookup and understand the rationale of the current setup.
+
+Just like posts have different requirements, so do users. To save bandwidth, users that navigate to the website via a phone may want thumbnails with a lower resolution. At the same time, a desktop user may want the full and intended experience. In the background we downscale the images 
+
+- [Responsive images](https://developer.mozilla.org/en-US/docs/Web/HTML/Responsive_images#active_learning_implementing_your_own_responsive_images)
+- [Jank-free page loading](https://blog.logrocket.com/jank-free-page-loading-with-media-aspect-ratios/)
+- [Optimize Cumulative Layout Shift](https://web.dev/articles/optimize-cls?utm_source=lighthouse&utm_medium=devtools#images_without_dimensions)
+
+### Jekyll plugins
+
+- [jekyll-resize](https://github.com/MichaelCurrin/jekyll-resize)
+
+### HTML
+
+- [img tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img)
+- [source tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source)
+- [picture tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture)
