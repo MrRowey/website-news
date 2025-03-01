@@ -42,11 +42,14 @@ categories: tournament # values: tournament / development / guide / community
 type: regular # values: regular / featured
 priority: 600 # priority in the news hub
 
-redirectURL: https://forum.faforever.com/category/1/announcements # URL that the news item points to
+# URL that the news item points to
+redirectURL: https://forum.faforever.com/category/1/announcements 
 
 image:
-  path: assets/images/2025/uef-base.png # path to thumbnail
-  alt: A UEF base right before a strategic missile explodes. # description of the thumbnail
+  # path to thumbnail
+  path: assets/images/2025/uef-base.png 
+  # description of the thumbnail for accessibility
+  alt: A UEF base right before a strategic missile explodes. 
 
 event: # only applies to news items with a date, like a meeting or a tournament
   dtstart: 2025-01-12 09:00:00 +0100 # format: YYYY-MM-DD HH:mm:ss +0100
@@ -62,12 +65,12 @@ The image field is a YAML object. The indenting shows that it has a `path` and a
 
 The content is relatively straight forward. As an example:
 
-```markdown
-Lorem ipsum odor amet, consectetuer adipiscing elit. Mauris curabitur nullam penatibus in torquent, amet feugiat mattis sapien! Eu eros praesent ad interdum est nisi fringilla tristique. Molestie dapibus laoreet ridiculus erat cubilia imperdiet. Ex neque maximus; sapien mus varius natoque. Vitae integer montes sagittis condimentum augue aptent. Nascetur ligula praesent mus himenaeos laoreet nisi quis laoreet. Vehicula sed consectetur accumsan taciti feugiat eros vulputate varius tincidunt.
+```
+Lorem ipsum odor amet, consectetuer adipiscing elit. (...)
 
 <!-- excerpt-end -->
 
-Primis ac sociosqu aenean leo odio tincidunt ultricies. Sapien nostra leo nunc sapien parturient id ullamcorper. Montes taciti habitasse consequat magnis sed turpis sodales. Praesent velit ullamcorper nisi ullamcorper; cras lobortis non. Vivamus sagittis dui netus amet nibh iaculis pulvinar. Tempor nulla lobortis consectetur potenti dictum consectetur et gravida. Rutrum sed sed elit sollicitudin blandit aliquet consequat. Faucibus accumsan sollicitudin ultricies accumsan pretium odio. Rhoncus molestie metus tristique habitasse id. Sapien sodales imperdiet platea; ac neque libero.
+Primis ac sociosqu aenean leo odio tincidunt ultricies. (...)
 
 (...) 
 ```
@@ -80,3 +83,4 @@ With all of that said you have all the information you need to create a news ite
 
 # Share the news item to GitHub
 
+Todo!
