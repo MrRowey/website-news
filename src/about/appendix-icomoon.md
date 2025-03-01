@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Appendix - IcoMoon
-permalink: /about/appendix-about-icomoon
+permalink: /about/appendix-icomoon
 
 image:
     path: assets/images/2025/tournament-event-01-2024.png

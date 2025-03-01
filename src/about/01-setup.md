@@ -86,7 +86,7 @@ Launch GitHub Desktop. Make sure that you are logged in with the GitHub account 
 
 Navigate to your fork on GitHub in the browser. Click on the green `<> code` button. In the popup, make sure the `HTTPS` tab is open. Copy the URL to the clipboard.
 
-{% include components/thumbnail.html path="/assets/images/about/github-clone-01.png" alt="test" %}
+![test](/assets/images/about/github-clone-01.png)
 
 In GitHub Desktop, navigate in the top bar menu navigate to `File -> Clone repository...`. In the popup, make sure the `URL` tab is open. Paste the URL you just copied into the `URL or username/repository` field. Then choose a location where you want to download and store the repository on your device. Note that the repository may grow to several gigabytes as time passes. Click on `Clone`. Once the cloning procedure is complete another popup asks you how you intend to use the project. Select `To contribute to the parent project` and click on `Continue`.
 
