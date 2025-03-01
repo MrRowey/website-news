@@ -9,11 +9,8 @@
   margin: 0;
   list-style: none;
 
-
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-  gap: 1rem;
-
   gap: 1em;
 }
 
@@ -22,8 +19,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-content: flex-start;
-  gap: 0.5rem 1rem;
-  
+
   height: 100%;
 
   &:focus-within {
@@ -38,9 +34,7 @@
   justify-content: space-between;
   flex-direction: column;
 
-  padding-top: 0.75em;
-  padding-left: 0.75em;
-  padding-right: 0.75em;
+padding: 1em;
 }
 
 .post-small-text-body-container {
@@ -50,12 +44,21 @@
   gap: 0.5rem 1rem;
 }
 
+.post-small-title {
+  margin: 0;
+}
+
+.post-small-link {
+}
+
 .post-small-header {
-  margin: 0
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .post-small-excerpt {
-  margin: 0
+  margin: 0;
 }
 
 .post-small-image-container {
