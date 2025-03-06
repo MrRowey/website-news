@@ -29,7 +29,7 @@ You'll need the following tools to interact with GitHub and run the website on y
 
 To run the website on your computer, you'll also need:
 
-- [Docker Desktop)](https://www.docker.com/products/docker-desktop/): A tool that automatically sets up everything needed to build and view the website on your device.
+- [Docker Desktop)](https://www.docker.com/products/docker-desktop/): A tool that automatically sets up everything needed to build and view the website on your device. (This will require you to turn on CPU Virtulisation to work, Consolt your Motherboard manual to fine out what it is called as it diffrent for Intel & AMD Platforms.)
 
 _Additional step for Windows users:_
 
@@ -41,7 +41,7 @@ These tools are optional but can make editing the website easier:
 
 - [Visual Studio Code](https://code.visualstudio.com/): A user-friendly text editor that makes it easier to work with website files.
 
-## Installing on Ubuntu
+## Optional - Installing on Ubuntu
 
 Installing software on Linux is sometimes trivial and sometimes... heartbreaking. If you're a Linux user and you're stuck then here's some help. We assume that you use the Ubuntu distribution.
 
@@ -68,7 +68,7 @@ If all the commands return one or more version number(s) then you are good to pr
 
 # Run the website
 
-The source code of the website is managed by a Git repository on GitHub. A Git repository contains files, just like a folder does. In this section we'll first create our own copy of the repository on GitHub. This process is called [forking a repository](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks). It provides you with a playground that you experiment in safely. We then proceed to download the fork that you just created. This process is called [cloning a repository](). Once you've cloned the repository the source files of this project is on your device, ready for you to run and edit. We'll use docker to build the source code into something that a browser understand and then use a web server to make the compiled website available through a browser. This process is called [compiling]() and [serving]() the website.
+The source code of the website is managed by a Git repository on GitHub. A Git repository contains files, just like a folder does. In this section we'll first create our own copy of the repository on GitHub. This process is called [forking a repository](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks). It provides you with a playground that you experiment in safely. We then proceed to download the fork that you just created. This process is called [cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository). Once you've cloned the repository the source files of this project is on your device, ready for you to run and edit. We'll use docker to build the source code into something that a browser understand and then use a web server to make the compiled website available through a browser. This process is called [compiling]() and [serving]() the website.
 
 For this section we assume that you have a GitHub account. You can not proceed without it.
 
